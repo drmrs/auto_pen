@@ -353,7 +353,7 @@ function outer_radius    (mm_per_tooth=3,number_of_teeth=11,clearance=0.1)    //
 n1 = 37; //red gear number of teeth. Set to zero if you don't want to print a pinion.
 n5 = 40;  //gray rack number of teeth.  Set to 1 if you don't want to print a rack- that's as small as it gets (you'll get 2 teeth if you set it to zero... I haven't tried to determine why that happens)
 mm_per_tooth = 5;
-thickness    = 20;  // depth of the rack from side-to-side, including backboard if any. The pinion will be this depth minus the backboard_thickness
+thickness    = 24;  // depth of the rack from side-to-side, including backboard if any. The pinion will be this depth minus the backboard_thickness
 hole         = 25;   //hole diameter in pinion gear
 //hole = 66;
 height       = 6.05;  // distance from bottom of the rack to the tips of the teeth
@@ -382,16 +382,48 @@ flange_height = 2.25; //Flanges will extend this much from the bottom of the rac
 
 d1 =pitch_radius(mm_per_tooth,n1);
 union() {
-translate([0,0,-10])
+translate([0,0,-12])
 difference() {
-    cylinder(d=25, h=20, $fn=100);
+    cylinder(d=25, h=24, $fn=100);
 
     union() {
-        cylinder(d=14, h=20, $fn=100);
+        cylinder(d=14, h=24, $fn=100);
         translate([((14/2)-5)+2,-2.5,0])
         cube([5,5,20]);
     }
 }
+
+
+screw_countersunk_depth = 3;
+screw_countersunk_thickness = 5.75;
+
+difference() {
+    translate([-20,-66.49,-12])
+    cube([200,24,24]);
+
+    translate([-20,-60.99,-7.0])
+    cube([28,14,14]);
+    
+    translate([-12,-60.99+7,-12])
+    cylinder(d=5, h=5, $fn=50);
+    
+    translate([0,-60.99+7,-12])
+    cylinder(d=5, h=5, $fn=50);
+    
+    translate([-12,-60.99+7,12-5]){
+        cylinder(d=3.5, h=5, $fn=50);
+        translate([0,0,5-screw_countersunk_depth])
+        cylinder(d=screw_countersunk_thickness, h=screw_countersunk_depth, $fn=50);
+    }
+    
+    translate([0,-60.99+7,12-5]) {
+        cylinder(d=3.5, h=5, $fn=50);
+        translate([0,0,5-screw_countersunk_depth])
+        cylinder(d=screw_countersunk_thickness, h=screw_countersunk_depth, $fn=50);
+    }
+}
+
+
 
 //Generation of pinion gear:
 translate([ 0,    0, -.5*backboard_thickness]) rotate([0,0, $t*360/n1])                 color([1.00,0.75,0.75]) gear(mm_per_tooth,n1,(thickness-backboard_thickness),hole); //rac -RE above: 'thickness-backboard_thickness' is used here to reduce gear thickness for backboard on rack, The '-.5*backboard_thickness' in translate puts gear bottom even with rack bottom
