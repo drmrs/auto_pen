@@ -10,9 +10,7 @@ If you can install and ssh into a linux box and have a 3d printed you should be 
 ![The Back](https://raw.githubusercontent.com/drmrs/auto_pen/master/images/back.jpg)
 ![The Inside](https://raw.githubusercontent.com/drmrs/auto_pen/master/images/inside.jpg)
 
-[Youtube Video 1](https://www.youtube.com/watch?v=B6goY3ZtnA)
-
-[Youtube Video 2](https://www.youtube.com/watch?v=6sc3pjCMek8)
+[Youtube Video](https://www.youtube.com/watch?v=6sc3pjCMek8)
 
 # Assembly & Use
 
@@ -28,7 +26,7 @@ The software is licenced under the Affero GPL.
 Improvements are always welcome and PRs generally will be accepted.
 
 Specific ways people can help include:
-- Finding and fiixing typos.
+- Finding and fixing typos.
 - Creating profiles for other raspberry pis beyond the original.
 - Improving the code base.
 - Adding more modes
