@@ -23,7 +23,7 @@ If you already have some of these parts the price will be even lower.
 4. x2 12mm m3 screws [AliExpress $1.74](https://www.aliexpress.com/item/33007545714.html)
 
 #### Electronics
-1. NEMA34 Stepper Motor [Stepper Moter / Controler Kit AliExpress $84.19](https://www.aliexpress.com/item/33025486138.html)
+1. NEMA34 Stepper Motor [Stepper Motor / Controller Kit AliExpress $84.19](https://www.aliexpress.com/item/33025486138.html)
 2. Stepper Motor Controller [Part of Kit $0](#)
 3. 24v 5A DC Power Supply [AliExpress $11.34](https://www.aliexpress.com/item/32905696401.html)
 4. 24v USB charger [AliExpress $3.00](https://www.aliexpress.com/item/33031240097.html)
@@ -33,7 +33,7 @@ If you already have some of these parts the price will be even lower.
 8 18AWG Wire [AliExpress $4.88](https://www.aliexpress.com/item/32903241720.html)
 
 #### Misc.
-1. A roll of pla filliment [Amazon $16](https://www.amazon.com/s?k=pla+1.75mm+filament)
+1. A roll of pla filament [Amazon $16](https://www.amazon.com/s?k=pla+1.75mm+filament)
 2. Super Glue [Amazon $3.97](https://www.amazon.com/Loctite-Ultra-Control-4-Gram-1363589)
 3. 14" Drawer Slide [Amazon $13.99](https://www.amazon.com/AmazonBasics-Bearing-Drawer-Slides-Plated-Steel/dp/B01MZC15UG)
 4. Female Breadboard Jumper Wires [Amazon $6.90](https://www.amazon.com/gp/product/B01EV70C78)
@@ -80,9 +80,11 @@ Remove the supports and continue.
 
 #### 1.4 Pusher Plate
 
+There are two types of pusher plates, one uses rope to attach your "tool" to the plate, the other is designed for suction-cup tools. Choose the one you prefer.
+
 All items here printed at 0.3mm layer heights with 15% gyroid infill and 8 perimeters.
 
-Load and print the rope pusher plate `auto_pen/hardware/bin/rope_pusher_plate.amf`
+Load and print the pusher plate you prefer `auto_pen/hardware/bin/rope_pusher_plate.amf` or `auto_pen/hardware/bin/suction_pusher_plate.amf`
 
 The plate should be facing down.
 
@@ -213,7 +215,7 @@ Using 2 12mm m3 screws and nuts lock the rope based pusher into place.
  
  After printing the hinges may be VERY stiff. move them til they loosen up.
  
- With the hinges in the 90 degree position glue them flush against the upper two corners. THe side with the hole is the top. THe hole should be on the left-ish side. (See photo below.)
+ With the hinges in the 90 degree position glue them flush against the upper two corners. THe side with the hole is the top. The hole should be on the left-ish side. (See photo below.)
  
  Allow to dry for 30 min.
  
