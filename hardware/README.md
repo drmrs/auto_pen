@@ -78,7 +78,7 @@ It should look like this.
 
 Remove the supports and continue.
 
-#### 1.4 Rope Pusher Plate
+#### 1.4 Pusher Plate
 
 All items here printed at 0.3mm layer heights with 15% gyroid infill and 8 perimeters.
 
@@ -153,7 +153,7 @@ Using 4 20mm or longer countersunk screws secure the stepper motor in place. The
 
 The Mains -> 24vDC Power supply goes in the back with the connectors facing the stepper and the screw holes facing down.
 
-Push 10mm countersunk screws threw the bottom and line them up with with the screw holes.
+Push 10mm countersunk screws through the bottom and line them up with with the screw holes.
 
 With one finger press a nut down onto the screw and use an allen wrench to tighten from the outside.
 
@@ -164,7 +164,7 @@ Now is a good time to run the USB cable. RUn it from the USB adapter to the righ
 
 #### 4.3 Stepper Motor Controller
 
-Mount the controller in the same way you mounted the power supply positioning the raspberry pi to the right and teh USB power adapter above the stepper motor to the left.
+Mount the controller in the same way you mounted the power supply positioning the raspberry pi to the right and the USB power adapter above the stepper motor to the left.
 
 ![Controller Left](https://raw.githubusercontent.com/drmrs/auto_pen/master/hardware/images/controller_and_usb_adapter.jpg)
 ![Controller Right](https://raw.githubusercontent.com/drmrs/auto_pen/master/hardware/images/controller_and_pi.jpg)
