@@ -8,11 +8,11 @@ While this script is tested against and is designed for the machine described in
 2. You can SSH into the machine and have networking set up.
 
 ## Important Note
-After you are done setting up your Pi it is highly recommended that you put your Pi in "read only" mode. This will ensure that your system will remain stable over time.
+After you are done setting up your Pi it is highly recommended that you put your Pi in "read-only" mode. This will ensure that your system will remain stable over time.
 
-THe adafruit provided script can be found [here](https://learn.adafruit.com/read-only-raspberry-pi/)
+The adafruit provided script can be found [here](https://learn.adafruit.com/read-only-raspberry-pi/)
 
-Once your Pi is in read only  mode you could enable writes temporarily via the `sudo mount -o remount,rw /` in order to make changes.
+Once your Pi is in read-only mode you could enable writes temporarily via the `sudo mount -o remount,rw /` in order to make changes.
 
 ## Install
 
@@ -45,9 +45,9 @@ The `auto_pen` software works via set profiles. Right now profiles are managed a
 
 Profiles are hardware specific. The included profile `raspberry_pi_1_1600_step_rev_rt` assumes that you are using a raspberry pi 1 with a 1600 step/revolution stepper motor, and that the code is operating with real time priority along with other technical details.
 
-While the `raspberry_pi_1_1600_step_rev_rt` should work on newer Raspberry Pis it is untested and is almost certainly will not be taking advantage of the hardware. (i.e. for faster penetration speeds. etc.)
+While the `raspberry_pi_1_1600_step_rev_rt` should work on newer Raspberry Pi's it is untested and is almost certainly will not be taking advantage of the hardware. (i.e. for faster penetration speeds. etc.)
 
-You can list and set a profile via the cli
+You can list and set a profile via the cli.
 
 ```shell script
 auto_pen configure --help
@@ -88,7 +88,7 @@ Options:
 Presently this mode is set to continue on til you `Ctrl-C` it or reach 16k strokes, whatever comes first. WHen you do `Ctrl-C` out the arm will reset to the original fully extended locked position before the program exits. 
 
 ### Random Mode
-Random mode will have the arm change penitration speed every n strokes where n is a random number between the min and max defined speed parameters in the currently loaded profile.
+Random mode will have the arm change penetration speed every n strokes where n is a random number between the min and max defined speed parameters in the currently loaded profile.
 
 ```shell script
 auto_pen random
@@ -100,6 +100,6 @@ Presently this mode is set to continue on til you `Ctrl-C` it or reach 16k strok
 
 Contributions are welcome in any form and PRs will generally be accepted.
 
-Adding profiles for newer Raspberry Pis is welcome along with new feature requests.
+Adding profiles for newer Raspberry Pi's is welcome along with new feature requests.
 
 Feel free to reach out or (preferably) open an issue.
