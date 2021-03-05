@@ -31,7 +31,7 @@ Specific ways people can help include:
 - Improving the code base.
 - Adding more modes
 - Improving the hardware diesign
-    - Replaving glued on parts with screws
+    - Replacing glued on parts with screws
     - Add a screw mount for the USB adapter.
     - Adding a screw mount for the raspberry pi.
 
