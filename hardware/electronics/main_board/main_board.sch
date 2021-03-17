@@ -1,0 +1,2356 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Main auto_pen board"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U_ESP_Brain1
+U 1 1 6033B547
+P 4550 2700
+F 0 "U_ESP_Brain1" H 4450 3350 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4450 3250 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 4550 1200 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4250 2750 50  0001 C CNN
+F 4 "C82899" H 4550 2700 50  0001 C CNN "JLCPCB"
+	1    4550 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 1200 2    50   Input ~ 0
+3.3v_Program
+Text GLabel 5150 1600 2    50   Input ~ 0
+TX_Program
+Text GLabel 1650 1300 2    50   Input ~ 0
+TX_Program
+Text GLabel 5150 1800 2    50   Input ~ 0
+RX_Program
+Text GLabel 1650 1400 2    50   Input ~ 0
+RX_Program
+Text Notes 850  800  0    118  ~ 24
+Programing Header
+Wire Notes Line width 39 style solid
+	2850 550  2850 1900
+Wire Notes Line width 39 style solid
+	2850 1900 550  1900
+Wire Notes Line width 39 style solid
+	550  550  2850 550 
+Wire Notes Line width 39 style solid
+	550  1900 550  550 
+Text GLabel 4650 1150 2    50   Input ~ 0
+3.3v_Program
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 60341EF8
+P 3750 1000
+F 0 "#PWR0108" H 3750 850 50  0001 C CNN
+F 1 "+3.3V" V 3765 1128 50  0000 L CNN
+F 2 "" H 3750 1000 50  0001 C CNN
+F 3 "" H 3750 1000 50  0001 C CNN
+	1    3750 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 1300 4150 1300
+Wire Wire Line
+	4150 1300 4150 1250
+Wire Wire Line
+	3900 1000 4150 1000
+Connection ~ 3900 1000
+Connection ~ 4150 1000
+Wire Wire Line
+	4150 1000 4550 1000
+Wire Wire Line
+	3750 1000 3900 1000
+Wire Wire Line
+	4150 1000 4150 1050
+$Comp
+L Device:C_Small C4
+U 1 1 6035A626
+P 4150 1150
+F 0 "C4" H 4242 1196 50  0000 L CNN
+F 1 "100nF" H 4242 1105 50  0000 L CNN
+F 2 "" H 4150 1150 50  0001 C CNN
+F 3 "~" H 4150 1150 50  0001 C CNN
+F 4 "C1525" H 4150 1150 50  0001 C CNN "JLCPCB"
+	1    4150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60341094
+P 3900 1150
+F 0 "C3" H 4015 1196 50  0000 L CNN
+F 1 "10uF" H 4015 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3938 1000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 3900 1150 50  0001 C CNN
+F 4 "C15525" H 3900 1150 50  0001 C CNN "JLCPCB"
+	1    3900 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 1000 4550 1150
+Text GLabel 3950 1500 0    50   Input ~ 0
+Reset
+Wire Wire Line
+	4550 4100 4550 4150
+Text Notes 4300 850  0    118  ~ 24
+ESP32
+Wire Notes Line width 39 style solid
+	2950 550  6000 550 
+Wire Notes Line width 39 style solid
+	6000 550  6000 4550
+$Comp
+L Connector:Conn_01x04_Male PHeader1
+U 1 1 603AB758
+P 1450 1300
+F 0 "PHeader1" H 1558 1581 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1558 1490 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 1450 1300 50  0001 C CNN
+F 3 "~" H 1450 1300 50  0001 C CNN
+F 4 "C31597" H 1450 1300 50  0001 C CNN "JLCPCB"
+	1    1450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+48V #PWR0101
+U 1 1 6035B6F8
+P 6500 3100
+F 0 "#PWR0101" H 6500 2950 50  0001 C CNN
+F 1 "+48V" V 6515 3228 50  0000 L CNN
+F 2 "" H 6500 3100 50  0001 C CNN
+F 3 "" H 6500 3100 50  0001 C CNN
+	1    6500 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0102
+U 1 1 6035C07A
+P 6500 4250
+F 0 "#PWR0102" H 6500 4000 50  0001 C CNN
+F 1 "Earth" H 6500 4100 50  0001 C CNN
+F 2 "" H 6500 4250 50  0001 C CNN
+F 3 "~" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_3.3v_1
+U 1 1 6035D4C2
+P 6700 3550
+F 0 "C_3.3v_1" H 6815 3596 50  0000 L CNN
+F 1 "220uF" H 6815 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_10x10.2" H 6738 3400 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+F 4 "C3358" H 6700 3550 50  0001 C CNN "JLCPCB"
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C_3.3v_0
+U 1 1 6036AD19
+P 6550 4100
+F 0 "C_3.3v_0" H 6150 4150 50  0000 L CNN
+F 1 "220uF" H 6200 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_10x10.2" H 6588 3950 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+F 4 "C3358" H 6550 4100 50  0001 C CNN "JLCPC"
+	1    6550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3100 6550 3100
+Wire Wire Line
+	6500 4250 6550 4250
+Connection ~ 6550 4250
+Wire Wire Line
+	6550 4250 9200 4250
+Wire Wire Line
+	6550 3950 6550 3100
+Connection ~ 6550 3100
+Wire Wire Line
+	6550 3100 6700 3100
+Wire Wire Line
+	6700 3400 6700 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	6700 3100 6950 3100
+Wire Wire Line
+	6700 3700 6700 4200
+$Comp
+L Device:R_Small_US R_3.3v_1
+U 1 1 603738D4
+P 6950 3300
+F 0 "R_3.3v_1" H 6600 3350 50  0000 L CNN
+F 1 "20Kohms" H 6550 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6950 3300 50  0001 C CNN
+F 3 "~" H 6950 3300 50  0001 C CNN
+F 4 "C55865" H 6950 3300 50  0001 C CNN "JLCPCB"
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3200 6950 3100
+$Comp
+L Device:C_Small C_3.3v_4
+U 1 1 60377895
+P 7400 4000
+F 0 "C_3.3v_4" H 7492 4046 50  0000 L CNN
+F 1 "100nF" H 7492 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7400 4000 50  0001 C CNN
+F 3 "~" H 7400 4000 50  0001 C CNN
+F 4 "C113803" H 7400 4000 50  0001 C CNN "JLCPCB"
+	1    7400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4200 6950 4200
+Wire Wire Line
+	7400 4100 7400 4200
+Connection ~ 7400 4200
+Wire Wire Line
+	7400 4200 8600 4200
+Connection ~ 7250 4200
+Wire Wire Line
+	7250 4200 7400 4200
+$Comp
+L Device:R_Small_US R_3.3_2
+U 1 1 60381F98
+P 8950 4000
+F 0 "R_3.3_2" V 8900 4050 50  0000 L CNN
+F 1 "9.1kohms" V 9018 3955 50  0000 L CNN
+F 2 "" H 8950 4000 50  0001 C CNN
+F 3 "~" H 8950 4000 50  0001 C CNN
+F 4 "C17855" H 8950 4000 50  0001 C CNN "JLCPCB"
+	1    8950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_3.3_4
+U 1 1 60383AC5
+P 8700 4100
+F 0 "C_3.3_4" V 8471 4100 50  0000 C CNN
+F 1 "22nF" V 8562 4100 50  0000 C CNN
+F 2 "" H 8700 4100 50  0001 C CNN
+F 3 "~" H 8700 4100 50  0001 C CNN
+F 4 "C1729" V 8700 4100 50  0001 C CNN "JLCPCB"
+	1    8700 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 3350 7250 4200
+Wire Wire Line
+	7400 3450 7400 3900
+Wire Wire Line
+	8950 3500 8950 3900
+Wire Wire Line
+	8950 4100 8800 4100
+Wire Wire Line
+	8600 4100 8600 4200
+Connection ~ 8600 4200
+$Comp
+L main_board_custom_sym:L4978D U_48v_to_3.3v1
+U 1 1 60357CA2
+P 8150 3550
+F 0 "U_48v_to_3.3v1" H 8150 4000 79  0000 C CNN
+F 1 "L4978D" H 8150 3900 79  0000 C CNN
+F 2 "Package_SO:SO-16_5.3x10.2mm_P1.27mm" H 8150 3550 79  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809291616_STMicroelectronics-L4978D_C93521.pdf" H 8150 3550 79  0001 C CNN
+F 4 "C93521" H 8150 3550 50  0001 C CNN "JLCPCB"
+	1    8150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3500 8950 3500
+Wire Wire Line
+	7750 3350 7250 3350
+Wire Wire Line
+	7750 3450 7400 3450
+Wire Wire Line
+	7750 3650 7650 3650
+Wire Wire Line
+	7650 3650 7650 3000
+Wire Wire Line
+	7650 3000 8700 3000
+$Comp
+L Device:C_Small C_3.3v_6
+U 1 1 603AEE1B
+P 8700 3200
+F 0 "C_3.3v_6" H 8792 3246 50  0000 L CNN
+F 1 "100nF" H 8792 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8700 3200 50  0001 C CNN
+F 3 "~" H 8700 3200 50  0001 C CNN
+F 4 "C113803" H 8700 3200 50  0001 C CNN "JLCPCB"
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3100 8700 3000
+Connection ~ 8700 3000
+Wire Wire Line
+	8700 3000 9200 3000
+Wire Wire Line
+	8700 3300 8700 3600
+Wire Wire Line
+	8700 3600 8550 3600
+$Comp
+L Device:D_Schottky_Small D_3.3_1
+U 1 1 603B281C
+P 9200 3600
+F 0 "D_3.3_1" H 9154 3670 50  0000 L CNN
+F 1 "STPS3L60U" H 9100 3750 50  0000 L CNN
+F 2 "Diode_SMD:D_2114_3652Metric" V 9200 3600 50  0001 C CNN
+F 3 "~" V 9200 3600 50  0001 C CNN
+F 4 "C132769" V 9200 3600 50  0001 C CNN "JLCPCB"
+	1    9200 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 3700 9200 4250
+Connection ~ 9200 4250
+Wire Wire Line
+	9200 3500 9200 3000
+Connection ~ 9200 3000
+Wire Wire Line
+	9200 3000 9350 3000
+$Comp
+L Device:L_Small L3.3_1
+U 1 1 603B95DD
+P 9450 3000
+F 0 "L3.3_1" V 9635 3000 50  0000 C CNN
+F 1 "126uH" V 9544 3000 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 9450 3000 50  0001 C CNN
+F 3 "~" H 9450 3000 50  0001 C CNN
+F 4 "C77120" V 9450 3000 50  0001 C CNN "JLPCB"
+	1    9450 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 3000 9600 3000
+Wire Wire Line
+	9750 4200 9750 3400
+Wire Wire Line
+	8600 4200 9750 4200
+Wire Wire Line
+	9750 4250 9750 4200
+Wire Wire Line
+	9200 4250 9600 4250
+Connection ~ 9750 4200
+Wire Wire Line
+	9750 4250 9850 4250
+Connection ~ 9750 4250
+Wire Wire Line
+	9750 3000 9850 3000
+Connection ~ 9750 3000
+Wire Wire Line
+	8550 3400 9750 3400
+Connection ~ 9750 3400
+Wire Wire Line
+	9750 3400 9750 3000
+Wire Wire Line
+	7550 3100 7550 4150
+Wire Wire Line
+	7550 4150 8550 4150
+Wire Wire Line
+	8550 4150 8550 3700
+Wire Wire Line
+	6950 3100 7550 3100
+Connection ~ 6950 3100
+Wire Wire Line
+	7750 3550 7150 3550
+Wire Wire Line
+	7150 3550 7150 3650
+Wire Wire Line
+	7150 3650 6950 3650
+Wire Wire Line
+	6950 3400 6950 3650
+$Comp
+L Device:C_Small C_3.3_2
+U 1 1 603D1CFF
+P 6950 3900
+F 0 "C_3.3_2" V 7050 3800 50  0000 L CNN
+F 1 "2.7nF" V 6850 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6950 3900 50  0001 C CNN
+F 3 "~" H 6950 3900 50  0001 C CNN
+F 4 "C1609" V 6950 3900 50  0001 C CNN "JLCPCB"
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3650 6950 3800
+Connection ~ 6950 3650
+Wire Wire Line
+	6950 4000 6950 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	6950 4200 7250 4200
+Wire Wire Line
+	7750 3750 7650 3750
+Wire Wire Line
+	7650 3750 7650 3650
+Connection ~ 7650 3650
+$Comp
+L power:Earth #PWR0103
+U 1 1 603D8B03
+P 9750 4350
+F 0 "#PWR0103" H 9750 4100 50  0001 C CNN
+F 1 "Earth" H 9750 4200 50  0001 C CNN
+F 2 "" H 9750 4350 50  0001 C CNN
+F 3 "~" H 9750 4350 50  0001 C CNN
+	1    9750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4250 9750 4350
+$Comp
+L main_board-cache:+3.3V #PWR0104
+U 1 1 603DAA76
+P 9850 3000
+F 0 "#PWR0104" H 9850 2850 50  0001 C CNN
+F 1 "+3.3V" V 9865 3128 50  0000 L CNN
+F 2 "" H 9850 3000 50  0001 C CNN
+F 3 "" H 9850 3000 50  0001 C CNN
+	1    9850 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND1 #PWR0105
+U 1 1 603DB20B
+P 9850 4250
+F 0 "#PWR0105" H 9850 4000 50  0001 C CNN
+F 1 "GND1" V 9855 4122 50  0000 R CNN
+F 2 "" H 9850 4250 50  0001 C CNN
+F 3 "" H 9850 4250 50  0001 C CNN
+	1    9850 4250
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line width 39 style solid
+	6100 2600 6100 4550
+Wire Notes Line width 39 style solid
+	6100 4550 10300 4550
+Wire Notes Line width 39 style solid
+	10300 4550 10300 2600
+Wire Notes Line width 39 style solid
+	10300 2600 6100 2600
+$Comp
+L power:+48V #PWR0106
+U 1 1 6041FA21
+P 6500 1050
+F 0 "#PWR0106" H 6500 900 50  0001 C CNN
+F 1 "+48V" V 6515 1178 50  0000 L CNN
+F 2 "" H 6500 1050 50  0001 C CNN
+F 3 "" H 6500 1050 50  0001 C CNN
+	1    6500 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0107
+U 1 1 6041FA27
+P 6500 2200
+F 0 "#PWR0107" H 6500 1950 50  0001 C CNN
+F 1 "Earth" H 6500 2050 50  0001 C CNN
+F 2 "" H 6500 2200 50  0001 C CNN
+F 3 "~" H 6500 2200 50  0001 C CNN
+	1    6500 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_12v_1
+U 1 1 6041FA2E
+P 6700 1500
+F 0 "C_12v_1" H 6815 1546 50  0000 L CNN
+F 1 "220uF" H 6815 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_10x10.2" H 6738 1350 50  0001 C CNN
+F 3 "~" H 6700 1500 50  0001 C CNN
+F 4 "C3358" H 6700 1500 50  0001 C CNN "JLCPCB"
+	1    6700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C_12v_0
+U 1 1 6041FA35
+P 6550 2050
+F 0 "C_12v_0" H 6150 2100 50  0000 L CNN
+F 1 "220uF" H 6200 2000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_10x10.2" H 6588 1900 50  0001 C CNN
+F 3 "~" H 6550 2050 50  0001 C CNN
+F 4 "C3358" H 6550 2050 50  0001 C CNN "JLCPC"
+	1    6550 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1050 6550 1050
+Wire Wire Line
+	6500 2200 6550 2200
+Connection ~ 6550 2200
+Wire Wire Line
+	6550 2200 9200 2200
+Wire Wire Line
+	6550 1900 6550 1050
+Connection ~ 6550 1050
+Wire Wire Line
+	6550 1050 6700 1050
+Wire Wire Line
+	6700 1350 6700 1050
+Connection ~ 6700 1050
+Wire Wire Line
+	6700 1050 6950 1050
+Wire Wire Line
+	6700 1650 6700 2150
+$Comp
+L Device:R_Small_US R_12v_1
+U 1 1 6041FA47
+P 6950 1250
+F 0 "R_12v_1" H 6600 1300 50  0000 L CNN
+F 1 "20Kohms" H 6550 1200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6950 1250 50  0001 C CNN
+F 3 "~" H 6950 1250 50  0001 C CNN
+F 4 "C55865" H 6950 1250 50  0001 C CNN "JLCPCB"
+	1    6950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1150 6950 1050
+$Comp
+L Device:C_Small C_12v_4
+U 1 1 6041FA4F
+P 7400 1950
+F 0 "C_12v_4" H 7492 1996 50  0000 L CNN
+F 1 "100nF" H 7492 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7400 1950 50  0001 C CNN
+F 3 "~" H 7400 1950 50  0001 C CNN
+F 4 "C113803" H 7400 1950 50  0001 C CNN "JLCPCB"
+	1    7400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2150 6950 2150
+Wire Wire Line
+	7400 2050 7400 2150
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 8600 2150
+Connection ~ 7250 2150
+Wire Wire Line
+	7250 2150 7400 2150
+$Comp
+L Device:R_Small_US R_12v_2
+U 1 1 6041FA5C
+P 8950 1950
+F 0 "R_12v_2" V 8900 2000 50  0000 L CNN
+F 1 "9.1kohms" V 9018 1905 50  0000 L CNN
+F 2 "" H 8950 1950 50  0001 C CNN
+F 3 "~" H 8950 1950 50  0001 C CNN
+F 4 "C17855" H 8950 1950 50  0001 C CNN "JLCPCB"
+	1    8950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_12_4
+U 1 1 6041FA63
+P 8700 2050
+F 0 "C_12_4" V 8471 2050 50  0000 C CNN
+F 1 "22nF" V 8562 2050 50  0000 C CNN
+F 2 "" H 8700 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+F 4 "C1729" V 8700 2050 50  0001 C CNN "JLCPCB"
+	1    8700 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 1300 7250 2150
+Wire Wire Line
+	7400 1400 7400 1850
+Wire Wire Line
+	8950 1450 8950 1850
+Wire Wire Line
+	8950 2050 8800 2050
+Wire Wire Line
+	8600 2050 8600 2150
+Connection ~ 8600 2150
+$Comp
+L main_board_custom_sym:L4978D U_48v_to_12v1
+U 1 1 6041FA70
+P 8150 1500
+F 0 "U_48v_to_12v1" H 8150 1950 79  0000 C CNN
+F 1 "L4978D" H 8150 1850 79  0000 C CNN
+F 2 "Package_SO:SO-16_5.3x10.2mm_P1.27mm" H 8150 1500 79  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809291616_STMicroelectronics-L4978D_C93521.pdf" H 8150 1500 79  0001 C CNN
+F 4 "C93521" H 8150 1500 50  0001 C CNN "JLCPCB"
+	1    8150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1450 8950 1450
+Wire Wire Line
+	7750 1300 7250 1300
+Wire Wire Line
+	7750 1400 7400 1400
+Wire Wire Line
+	7750 1600 7650 1600
+Wire Wire Line
+	7650 1600 7650 950 
+Wire Wire Line
+	7650 950  8700 950 
+$Comp
+L Device:C_Small C_12v_6
+U 1 1 6041FA7D
+P 8700 1150
+F 0 "C_12v_6" H 8792 1196 50  0000 L CNN
+F 1 "100nF" H 8792 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8700 1150 50  0001 C CNN
+F 3 "~" H 8700 1150 50  0001 C CNN
+F 4 "C113803" H 8700 1150 50  0001 C CNN "JLCPCB"
+	1    8700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1050 8700 950 
+Connection ~ 8700 950 
+Wire Wire Line
+	8700 950  9200 950 
+Wire Wire Line
+	8700 1250 8700 1550
+Wire Wire Line
+	8700 1550 8550 1550
+$Comp
+L Device:D_Schottky_Small D_12v_1
+U 1 1 6041FA89
+P 9200 1900
+F 0 "D_12v_1" H 9050 1950 50  0000 L CNN
+F 1 "STPS3L60U" H 9000 2050 50  0000 L CNN
+F 2 "Diode_SMD:D_2114_3652Metric" V 9200 1900 50  0001 C CNN
+F 3 "~" V 9200 1900 50  0001 C CNN
+F 4 "C132769" V 9200 1900 50  0001 C CNN "JLCPCB"
+	1    9200 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 2000 9200 2200
+Connection ~ 9200 2200
+Wire Wire Line
+	9200 1800 9200 950 
+Connection ~ 9200 950 
+Wire Wire Line
+	9200 950  9350 950 
+$Comp
+L Device:L_Small L_12v_1
+U 1 1 6041FA95
+P 9450 950
+F 0 "L_12v_1" V 9635 950 50  0000 C CNN
+F 1 "126uH" V 9544 950 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 9450 950 50  0001 C CNN
+F 3 "~" H 9450 950 50  0001 C CNN
+F 4 "C77120" V 9450 950 50  0001 C CNN "JLPCB"
+	1    9450 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 2150 9750 2150
+Wire Wire Line
+	9750 2200 9750 2150
+Wire Wire Line
+	9200 2200 9600 2200
+Wire Wire Line
+	9750 2200 9850 2200
+Connection ~ 9750 2200
+Wire Wire Line
+	7550 1050 7550 2100
+Wire Wire Line
+	7550 2100 8550 2100
+Wire Wire Line
+	8550 2100 8550 1650
+Wire Wire Line
+	6950 1050 7550 1050
+Connection ~ 6950 1050
+Wire Wire Line
+	7750 1500 7150 1500
+Wire Wire Line
+	7150 1500 7150 1600
+Wire Wire Line
+	7150 1600 6950 1600
+Wire Wire Line
+	6950 1350 6950 1600
+$Comp
+L Device:C_Small C_12v_2
+U 1 1 6041FAB2
+P 6950 1850
+F 0 "C_12v_2" V 7050 1700 50  0000 L CNN
+F 1 "2.7nF" V 6850 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6950 1850 50  0001 C CNN
+F 3 "~" H 6950 1850 50  0001 C CNN
+F 4 "C1609" V 6950 1850 50  0001 C CNN "JLCPCB"
+	1    6950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1600 6950 1750
+Connection ~ 6950 1600
+Wire Wire Line
+	6950 1950 6950 2150
+Connection ~ 6950 2150
+Wire Wire Line
+	6950 2150 7250 2150
+Wire Wire Line
+	7750 1700 7650 1700
+Wire Wire Line
+	7650 1700 7650 1600
+Connection ~ 7650 1600
+$Comp
+L power:Earth #PWR0109
+U 1 1 6041FAC0
+P 9750 2300
+F 0 "#PWR0109" H 9750 2050 50  0001 C CNN
+F 1 "Earth" H 9750 2150 50  0001 C CNN
+F 2 "" H 9750 2300 50  0001 C CNN
+F 3 "~" H 9750 2300 50  0001 C CNN
+	1    9750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2200 9750 2300
+Text Notes 7150 800  0    118  ~ 24
+48v to 12v Power Drop
+Wire Notes Line width 39 style solid
+	6100 550  6100 2500
+Wire Notes Line width 39 style solid
+	6100 2500 10300 2500
+Wire Notes Line width 39 style solid
+	10300 2500 10300 550 
+Wire Notes Line width 39 style solid
+	10300 550  6100 550 
+Wire Wire Line
+	9550 950  9600 950 
+$Comp
+L Device:R_Small_US R_12v_3
+U 1 1 6043DA1E
+P 9750 1050
+F 0 "R_12v_3" H 9800 1050 50  0000 L CNN
+F 1 "12kOhms" H 9800 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9750 1050 50  0001 C CNN
+F 3 "~" H 9750 1050 50  0001 C CNN
+F 4 "C17444" H 9750 1050 50  0001 C CNN "JLCPCB"
+	1    9750 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 950 
+Wire Wire Line
+	9750 950  9850 950 
+$Comp
+L Device:R_Small_US R_12v_4
+U 1 1 6043E94D
+P 9750 2050
+F 0 "R_12v_4" H 9818 2096 50  0000 L CNN
+F 1 "4.7KOhms" H 9818 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9750 2050 50  0001 C CNN
+F 3 "~" H 9750 2050 50  0001 C CNN
+F 4 "C17936" H 9750 2050 50  0001 C CNN "JLCPCB"
+	1    9750 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 2150
+Wire Wire Line
+	9750 1150 9750 1350
+Wire Wire Line
+	8550 1350 9750 1350
+Connection ~ 9750 1350
+Wire Wire Line
+	9750 1350 9750 1950
+$Comp
+L power:+12V #PWR0110
+U 1 1 6045AD14
+P 9850 950
+F 0 "#PWR0110" H 9850 800 50  0001 C CNN
+F 1 "+12V" V 9865 1078 50  0000 L CNN
+F 2 "" H 9850 950 50  0001 C CNN
+F 3 "" H 9850 950 50  0001 C CNN
+	1    9850 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND2 #PWR0111
+U 1 1 6045B7F1
+P 9850 2200
+F 0 "#PWR0111" H 9850 1950 50  0001 C CNN
+F 1 "GND2" V 9855 2072 50  0000 R CNN
+F 2 "" H 9850 2200 50  0001 C CNN
+F 3 "" H 9850 2200 50  0001 C CNN
+	1    9850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C_3.3v_8
+U 1 1 6045FE16
+P 9600 3850
+F 0 "C_3.3v_8" H 9692 3896 50  0000 L CNN
+F 1 "330uF" H 9692 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 9600 3850 50  0001 C CNN
+F 3 "~" H 9600 3850 50  0001 C CNN
+F 4 "C250071" H 9600 3850 50  0001 C CNN "JLCPCB"
+	1    9600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3750 9600 3000
+Connection ~ 9600 3000
+Wire Wire Line
+	9600 3000 9750 3000
+Wire Wire Line
+	9600 3950 9600 4250
+Connection ~ 9600 4250
+Wire Wire Line
+	9600 4250 9750 4250
+$Comp
+L Device:C_Small C_12v_8
+U 1 1 6046BE46
+P 9600 1800
+F 0 "C_12v_8" H 9692 1846 50  0000 L CNN
+F 1 "330uF" H 9692 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 9600 1800 50  0001 C CNN
+F 3 "~" H 9600 1800 50  0001 C CNN
+F 4 "C127329" H 9600 1800 50  0001 C CNN "JLCPCB"
+	1    9600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1700 9600 950 
+Connection ~ 9600 950 
+Wire Wire Line
+	9600 950  9750 950 
+Wire Wire Line
+	9600 1900 9600 2200
+Connection ~ 9600 2200
+Wire Wire Line
+	9600 2200 9750 2200
+Text GLabel 1650 1500 2    50   Input ~ 0
+Prog_GND
+Text GLabel 4600 4150 2    50   Input ~ 0
+Prog_GND
+Wire Wire Line
+	4650 1150 4550 1150
+Connection ~ 4550 1150
+Wire Wire Line
+	4550 1150 4550 1300
+Wire Wire Line
+	4600 4150 4550 4150
+Connection ~ 4550 4150
+Wire Wire Line
+	4550 4150 4550 4250
+$Comp
+L Connector:Conn_01x02_Male J_48v_IN1
+U 1 1 6050912E
+P 10650 1100
+F 0 "J_48v_IN1" V 10712 1144 50  0000 L CNN
+F 1 "XT-30" V 10803 1144 50  0000 L CNN
+F 2 "main_board:XT30PW-M" H 10650 1100 50  0001 C CNN
+F 3 "~" H 10650 1100 50  0001 C CNN
+	1    10650 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+48V #PWR0112
+U 1 1 6050F141
+P 10550 1300
+F 0 "#PWR0112" H 10550 1150 50  0001 C CNN
+F 1 "+48V" H 10565 1473 50  0000 C CNN
+F 2 "" H 10550 1300 50  0001 C CNN
+F 3 "" H 10550 1300 50  0001 C CNN
+	1    10550 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0113
+U 1 1 6050FAE5
+P 10650 1300
+F 0 "#PWR0113" H 10650 1050 50  0001 C CNN
+F 1 "Earth" H 10650 1150 50  0001 C CNN
+F 2 "" H 10650 1300 50  0001 C CNN
+F 3 "~" H 10650 1300 50  0001 C CNN
+	1    10650 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 7150 2850 0    118  ~ 24
+48v to 3.3v Power Drop
+Text Notes 10550 1000 0    118  ~ 24
+48v\nCON
+Wire Notes Line width 39 style solid
+	11100 1550 11100 550 
+Wire Notes Line width 39 style solid
+	11100 550  10400 550 
+Wire Notes Line width 39 style solid
+	10400 550  10400 1550
+Wire Notes Line width 39 style solid
+	10400 1550 11100 1550
+$Comp
+L Transistor_FET:CSD18537NQ5A Q1
+U 1 1 605554E8
+P 13950 4200
+F 0 "Q1" H 14155 4246 50  0000 L CNN
+F 1 "CSD18537NQ5A" H 14155 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 14150 4125 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd18537nq5a" V 13950 4200 50  0001 L CNN
+F 4 "C72266" H 13950 4200 50  0001 C CNN "JLCPCB"
+	1    13950 4200
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3900 1300
+Wire Wire Line
+	3750 1300 3900 1300
+$Comp
+L power:GND1 #PWR0114
+U 1 1 6059F3FC
+P 3750 1300
+F 0 "#PWR0114" H 3750 1050 50  0001 C CNN
+F 1 "GND1" V 3755 1172 50  0000 R CNN
+F 2 "" H 3750 1300 50  0001 C CNN
+F 3 "" H 3750 1300 50  0001 C CNN
+	1    3750 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND1 #PWR0115
+U 1 1 605A02B9
+P 4550 4250
+F 0 "#PWR0115" H 4550 4000 50  0001 C CNN
+F 1 "GND1" H 4555 4077 50  0000 C CNN
+F 2 "" H 4550 4250 50  0001 C CNN
+F 3 "" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 39 style solid
+	550  4800 550  3450
+Wire Notes Line width 39 style solid
+	550  3450 2850 3450
+Wire Notes Line width 39 style solid
+	2850 4800 550  4800
+Wire Notes Line width 39 style solid
+	2850 3450 2850 4800
+Text Notes 1200 3700 0    118  ~ 24
+Prog Button
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 604B4717
+P 1800 4050
+F 0 "#PWR0116" H 1800 3900 50  0001 C CNN
+F 1 "+3.3V" H 1815 4223 50  0000 C CNN
+F 2 "" H 1800 4050 50  0001 C CNN
+F 3 "" H 1800 4050 50  0001 C CNN
+	1    1800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4350 1950 4350
+Connection ~ 1800 4350
+Wire Wire Line
+	1650 4350 1800 4350
+$Comp
+L power:GND #PWR0117
+U 1 1 604B470D
+P 1250 4350
+F 0 "#PWR0117" H 1250 4100 50  0001 C CNN
+F 1 "GND" V 1255 4222 50  0000 R CNN
+F 2 "" H 1250 4350 50  0001 C CNN
+F 3 "" H 1250 4350 50  0001 C CNN
+	1    1250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R_PROG_1
+U 1 1 604B4707
+P 1800 4200
+F 0 "R_PROG_1" H 1868 4246 50  0000 L CNN
+F 1 "10kOhms" H 1868 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1840 4190 50  0001 C CNN
+F 3 "~" H 1800 4200 50  0001 C CNN
+F 4 "C17902" H 1800 4200 50  0001 C CNN "JLCPCB"
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual PROG1
+U 1 1 604B4700
+P 1450 4350
+F 0 "PROG1" H 1450 4635 50  0000 C CNN
+F 1 "SW_Push_Dual" H 1450 4544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 1450 4550 50  0001 C CNN
+F 3 "~" H 1450 4550 50  0001 C CNN
+F 4 "C381038" H 1450 4350 50  0001 C CNN "JLCPCB"
+	1    1450 4350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 39 style solid
+	2950 4550 2950 550 
+Wire Notes Line width 39 style solid
+	6000 4550 2950 4550
+Wire Notes Line width 39 style solid
+	550  3350 550  2000
+Wire Notes Line width 39 style solid
+	550  2000 2850 2000
+Wire Notes Line width 39 style solid
+	2850 3350 550  3350
+Wire Notes Line width 39 style solid
+	2850 2000 2850 3350
+Text Notes 1100 2250 0    118  ~ 24
+Reset Button
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 60415A04
+P 1800 2600
+F 0 "#PWR0118" H 1800 2450 50  0001 C CNN
+F 1 "+3.3V" H 1815 2773 50  0000 C CNN
+F 2 "" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2900 1950 2900
+Connection ~ 1800 2900
+Wire Wire Line
+	1650 2900 1800 2900
+Text GLabel 1950 2900 2    50   Input ~ 0
+Reset
+$Comp
+L power:GND #PWR0119
+U 1 1 603F848A
+P 1250 2900
+F 0 "#PWR0119" H 1250 2650 50  0001 C CNN
+F 1 "GND" V 1255 2772 50  0000 R CNN
+F 2 "" H 1250 2900 50  0001 C CNN
+F 3 "" H 1250 2900 50  0001 C CNN
+	1    1250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R_RESET_1
+U 1 1 603F6385
+P 1800 2750
+F 0 "R_RESET_1" H 1868 2796 50  0000 L CNN
+F 1 "10kOhms" H 1868 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1840 2740 50  0001 C CNN
+F 3 "~" H 1800 2750 50  0001 C CNN
+F 4 "C17902" H 1800 2750 50  0001 C CNN "JLCPCB"
+	1    1800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual RESET1
+U 1 1 603CD8EA
+P 1450 2900
+F 0 "RESET1" H 1450 3185 50  0000 C CNN
+F 1 "SW_Push_Dual" H 1450 3094 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 1450 3100 50  0001 C CNN
+F 3 "~" H 1450 3100 50  0001 C CNN
+F 4 "C381038" H 1450 2900 50  0001 C CNN "JLCPCB"
+	1    1450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 6053C0E7
+P 1925 5425
+F 0 "#PWR01" H 1925 5275 50  0001 C CNN
+F 1 "+12V" H 1940 5598 50  0000 C CNN
+F 2 "" H 1925 5425 50  0001 C CNN
+F 3 "" H 1925 5425 50  0001 C CNN
+	1    1925 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND2 #PWR02
+U 1 1 6053CD68
+P 1950 6000
+F 0 "#PWR02" H 1950 5750 50  0001 C CNN
+F 1 "GND2" V 1955 5872 50  0000 R CNN
+F 2 "" H 1950 6000 50  0001 C CNN
+F 3 "" H 1950 6000 50  0001 C CNN
+	1    1950 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C_tmc_1
+U 1 1 6057CC8F
+P 1925 5850
+F 0 "C_tmc_1" H 2017 5896 50  0000 L CNN
+F 1 "2.2u" H 2017 5805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1925 5850 50  0001 C CNN
+F 3 "~" H 1925 5850 50  0001 C CNN
+F 4 "C23630" H 1925 5850 50  0001 C CNN "JLCPCB"
+	1    1925 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_tmc_2
+U 1 1 60581E38
+P 1600 5725
+F 0 "C_tmc_2" V 1650 5525 50  0000 C CNN
+F 1 "2.2u" V 1650 5850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1600 5725 50  0001 C CNN
+F 3 "~" H 1600 5725 50  0001 C CNN
+F 4 "C23630" H 1600 5725 50  0001 C CNN "JLCPCB"
+	1    1600 5725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C_tmc_3
+U 1 1 605876EB
+P 1600 6000
+F 0 "C_tmc_3" V 1650 5800 50  0000 C CNN
+F 1 "470n" V 1650 6125 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1600 6000 50  0001 C CNN
+F 3 "~" H 1600 6000 50  0001 C CNN
+F 4 "C1623" H 1600 6000 50  0001 C CNN "JLCPCB"
+	1    1600 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R_tmc_1
+U 1 1 605A47E0
+P 1200 5875
+F 0 "R_tmc_1" H 850 5925 50  0000 L CNN
+F 1 "2R2" H 1025 5850 50  0000 L CNN
+F 2 "" H 1200 5875 50  0001 C CNN
+F 3 "~" H 1200 5875 50  0001 C CNN
+	1    1200 5875
+	1    0    0    -1  
+$EndComp
+Text GLabel 1075 6000 0    39   Input ~ 0
+TMC_VCC
+Text GLabel 4325 5375 1    39   Input ~ 0
+TMC_VCC
+Text GLabel 4175 5375 1    39   Input ~ 0
+TMC_VSA
+Text GLabel 1875 5500 0    39   Input ~ 0
+TMC_VSA
+Wire Wire Line
+	1075 6000 1200 6000
+Wire Wire Line
+	1200 5975 1200 6000
+Connection ~ 1200 6000
+Wire Wire Line
+	1200 6000 1500 6000
+Text GLabel 1150 5725 0    39   Input ~ 0
+TMC_5VOUT
+Text GLabel 4850 7425 2    39   Input ~ 0
+TMC_5VOUT
+Wire Wire Line
+	1700 6000 1850 6000
+Wire Wire Line
+	1150 5725 1200 5725
+Wire Wire Line
+	1200 5775 1200 5725
+Connection ~ 1200 5725
+Wire Wire Line
+	1200 5725 1500 5725
+Wire Wire Line
+	1700 5725 1850 5725
+Wire Wire Line
+	1850 5725 1850 6000
+Connection ~ 1850 6000
+Wire Wire Line
+	1850 6000 1925 6000
+Wire Wire Line
+	1925 5950 1925 6000
+Connection ~ 1925 6000
+Wire Wire Line
+	1925 6000 1950 6000
+Text GLabel 1875 5600 0    39   Input ~ 0
+TMC_12VOUT
+Text GLabel 4850 7350 2    39   Input ~ 0
+TMC_12VOUT
+Wire Wire Line
+	1925 5425 1925 5500
+Wire Wire Line
+	1875 5500 1925 5500
+Connection ~ 1925 5500
+Wire Wire Line
+	1925 5500 1925 5600
+Wire Wire Line
+	1875 5600 1925 5600
+Connection ~ 1925 5600
+Wire Wire Line
+	1925 5600 1925 5750
+Wire Notes Line
+	9800 3950 9800 3975
+Text Notes 2275 5150 2    118  ~ 24
+TMC Gate Voltage\n
+Wire Notes Line width 39 style solid
+	2400 6175 550  6175
+Wire Notes Line width 39 style solid
+	550  6175 550  4900
+Wire Notes Line width 39 style solid
+	550  4900 2400 4900
+Wire Notes Line width 39 style solid
+	2400 4900 2400 6175
+$Comp
+L power:GND1 #PWR03
+U 1 1 608D21C7
+P 3750 5900
+F 0 "#PWR03" H 3750 5650 50  0001 C CNN
+F 1 "GND1" V 3755 5772 50  0000 R CNN
+F 2 "" H 3750 5900 50  0001 C CNN
+F 3 "" H 3750 5900 50  0001 C CNN
+	1    3750 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C_TMC_4
+U 1 1 608D7F7B
+P 10650 2350
+F 0 "C_TMC_4" H 10250 2325 50  0000 L CNN
+F 1 "100nF" H 10325 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10650 2350 50  0001 C CNN
+F 3 "~" H 10650 2350 50  0001 C CNN
+F 4 "C113803" H 10650 2350 50  0001 C CNN "JLCPCB"
+	1    10650 2350
+	-1   0    0    1   
+$EndComp
+Text GLabel 4250 5375 1    39   Input ~ 0
+TMC_VCC_IO
+Text GLabel 10475 2150 3    39   Input ~ 8
+TMC_VCC_IO
+$Comp
+L main_board-cache:+3.3V #PWR05
+U 1 1 60914C1E
+P 10725 2150
+F 0 "#PWR05" H 10725 2000 50  0001 C CNN
+F 1 "+3.3V" V 10740 2278 50  0000 L CNN
+F 2 "" H 10725 2150 50  0001 C CNN
+F 3 "" H 10725 2150 50  0001 C CNN
+	1    10725 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND1 #PWR04
+U 1 1 609153ED
+P 10650 2525
+F 0 "#PWR04" H 10650 2275 50  0001 C CNN
+F 1 "GND1" H 10655 2352 50  0000 C CNN
+F 2 "" H 10650 2525 50  0001 C CNN
+F 3 "" H 10650 2525 50  0001 C CNN
+	1    10650 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10475 2150 10650 2150
+Wire Wire Line
+	10650 2450 10650 2525
+Wire Wire Line
+	10650 2250 10650 2150
+Connection ~ 10650 2150
+Wire Wire Line
+	10650 2150 10725 2150
+Text Notes 10550 2050 0    118  ~ 24
+TMC\nPWR
+Wire Notes Line width 39 style solid
+	11100 2775 10400 2775
+Wire Notes Line width 39 style solid
+	10400 2775 10400 1625
+Wire Notes Line width 39 style solid
+	10400 1625 11100 1625
+Wire Notes Line width 39 style solid
+	11100 1625 11100 2775
+$Comp
+L trinamic_PMIC-Motor-Drivers-Controllers:TMC5160-TA U_TRINAMIC1
+U 1 1 604FFADE
+P 4300 6500
+F 0 "U_TRINAMIC1" H 4300 7250 40  0000 C CNN
+F 1 "TMC5160-TA" H 4300 7150 40  0000 C CNN
+F 2 "trinamic-footprints:eTQFP48" H 5150 6700 60  0001 L CNN
+F 3 "https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC5160_Datasheet_Rev1.06.pdf" H 5150 6800 60  0001 L CNN
+F 4 "1460-1249-ND" H 5150 6900 60  0001 L CNN "Digi-Key_PN"
+F 5 "TMC5160-TA" H 5150 7000 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5150 7100 60  0001 L CNN "Category"
+F 7 "PMIC - Motor Drivers, Controllers" H 5150 7200 60  0001 L CNN "Family"
+F 8 "https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC5160_Datasheet_Rev1.06.pdf" H 5150 7300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/trinamic-motion-control-gmbh/TMC5160-TA/1460-1249-ND/8440396" H 5150 7400 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MTR DRVR BIPOLAR 8-60V 48TQFP" H 5150 7500 60  0001 L CNN "Description"
+F 11 "Trinamic Motion Control GmbH" H 5150 7600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5150 7700 60  0001 L CNN "Status"
+	1    4300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_1
+U 1 1 60A0982B
+P 11475 1450
+F 0 "C_TMC_1" V 11425 1700 50  0000 L CNN
+F 1 "1n" V 11500 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11475 1450 50  0001 C CNN
+F 3 "~" H 11475 1450 50  0001 C CNN
+F 4 "C35216" V 11475 1450 50  0001 C CNN "JLCPCB"
+	1    11475 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 14750 1550 1    39   Input ~ 0
+TMC_CPO
+Text GLabel 4850 6926 2    39   Input ~ 0
+TMC_CPO
+Text GLabel 11350 1350 3    39   Input ~ 0
+TMC_CPI
+$Comp
+L Device:C_Small C_TMC_11
+U 1 1 60AB668C
+P 12675 1725
+F 0 "C_TMC_11" V 12450 1725 50  0000 C CNN
+F 1 "100n" V 12550 1725 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 12675 1725 50  0001 C CNN
+F 3 "~" H 12675 1725 50  0001 C CNN
+F 4 "C1525" V 12675 1725 50  0001 C CNN "JLCPCB"
+	1    12675 1725
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4850 6850 2    39   Input ~ 0
+TNC_VCP
+Text GLabel 12575 1725 0    39   Input ~ 0
+TNC_VCP
+Text GLabel 12900 1725 3    39   Input ~ 0
+TMC_VS
+Text GLabel 4400 5375 1    39   Input ~ 0
+TMC_VS
+$Comp
+L Device:C_Small C_TMC_2
+U 1 1 60B010C7
+P 11625 1450
+F 0 "C_TMC_2" V 11575 1700 50  0000 L CNN
+F 1 "1n" V 11650 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11625 1450 50  0001 C CNN
+F 3 "~" H 11625 1450 50  0001 C CNN
+F 4 "C35216" V 11625 1450 50  0001 C CNN "JLCPCB"
+	1    11625 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_3
+U 1 1 60B10C74
+P 11775 1450
+F 0 "C_TMC_3" V 11725 1700 50  0000 L CNN
+F 1 "1n" V 11800 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11775 1450 50  0001 C CNN
+F 3 "~" H 11775 1450 50  0001 C CNN
+F 4 "C35216" V 11775 1450 50  0001 C CNN "JLCPCB"
+	1    11775 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_5
+U 1 1 60B10C7B
+P 11925 1450
+F 0 "C_TMC_5" V 11875 1700 50  0000 L CNN
+F 1 "1n" V 11950 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11925 1450 50  0001 C CNN
+F 3 "~" H 11925 1450 50  0001 C CNN
+F 4 "C35216" V 11925 1450 50  0001 C CNN "JLCPCB"
+	1    11925 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_6
+U 1 1 60B19062
+P 12075 1450
+F 0 "C_TMC_6" V 12025 1700 50  0000 L CNN
+F 1 "1n" V 12100 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12075 1450 50  0001 C CNN
+F 3 "~" H 12075 1450 50  0001 C CNN
+F 4 "C35216" V 12075 1450 50  0001 C CNN "JLCPCB"
+	1    12075 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_7
+U 1 1 60B19069
+P 12225 1450
+F 0 "C_TMC_7" V 12175 1700 50  0000 L CNN
+F 1 "1n" V 12250 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12225 1450 50  0001 C CNN
+F 3 "~" H 12225 1450 50  0001 C CNN
+F 4 "C35216" V 12225 1450 50  0001 C CNN "JLCPCB"
+	1    12225 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_8
+U 1 1 60B19070
+P 12375 1450
+F 0 "C_TMC_8" V 12325 1700 50  0000 L CNN
+F 1 "1n" V 12400 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12375 1450 50  0001 C CNN
+F 3 "~" H 12375 1450 50  0001 C CNN
+F 4 "C35216" V 12375 1450 50  0001 C CNN "JLCPCB"
+	1    12375 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_9
+U 1 1 60B19077
+P 12525 1450
+F 0 "C_TMC_9" V 12475 1700 50  0000 L CNN
+F 1 "1n" V 12550 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12525 1450 50  0001 C CNN
+F 3 "~" H 12525 1450 50  0001 C CNN
+F 4 "C35216" V 12525 1450 50  0001 C CNN "JLCPCB"
+	1    12525 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_10
+U 1 1 60B209C2
+P 12675 1450
+F 0 "C_TMC_10" V 12625 1700 50  0000 L CNN
+F 1 "1n" V 12700 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12675 1450 50  0001 C CNN
+F 3 "~" H 12675 1450 50  0001 C CNN
+F 4 "C35216" V 12675 1450 50  0001 C CNN "JLCPCB"
+	1    12675 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_12
+U 1 1 60B209C9
+P 12825 1450
+F 0 "C_TMC_12" V 12775 1700 50  0000 L CNN
+F 1 "1n" V 12850 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12825 1450 50  0001 C CNN
+F 3 "~" H 12825 1450 50  0001 C CNN
+F 4 "C35216" V 12825 1450 50  0001 C CNN "JLCPCB"
+	1    12825 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_13
+U 1 1 60B209D0
+P 12975 1450
+F 0 "C_TMC_13" V 12925 1700 50  0000 L CNN
+F 1 "1n" V 13000 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12975 1450 50  0001 C CNN
+F 3 "~" H 12975 1450 50  0001 C CNN
+F 4 "C35216" V 12975 1450 50  0001 C CNN "JLCPCB"
+	1    12975 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_15
+U 1 1 60B209D7
+P 13125 1450
+F 0 "C_TMC_15" V 13075 1700 50  0000 L CNN
+F 1 "1n" V 13150 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13125 1450 50  0001 C CNN
+F 3 "~" H 13125 1450 50  0001 C CNN
+F 4 "C35216" V 13125 1450 50  0001 C CNN "JLCPCB"
+	1    13125 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_16
+U 1 1 60B28362
+P 13275 1450
+F 0 "C_TMC_16" V 13225 1700 50  0000 L CNN
+F 1 "1n" V 13300 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13275 1450 50  0001 C CNN
+F 3 "~" H 13275 1450 50  0001 C CNN
+F 4 "C35216" V 13275 1450 50  0001 C CNN "JLCPCB"
+	1    13275 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_17
+U 1 1 60B28369
+P 13425 1450
+F 0 "C_TMC_17" V 13375 1700 50  0000 L CNN
+F 1 "1n" V 13450 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13425 1450 50  0001 C CNN
+F 3 "~" H 13425 1450 50  0001 C CNN
+F 4 "C35216" V 13425 1450 50  0001 C CNN "JLCPCB"
+	1    13425 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_18
+U 1 1 60B28370
+P 13575 1450
+F 0 "C_TMC_18" V 13525 1700 50  0000 L CNN
+F 1 "1n" V 13600 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13575 1450 50  0001 C CNN
+F 3 "~" H 13575 1450 50  0001 C CNN
+F 4 "C35216" V 13575 1450 50  0001 C CNN "JLCPCB"
+	1    13575 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_19
+U 1 1 60B28377
+P 13725 1450
+F 0 "C_TMC_19" V 13675 1700 50  0000 L CNN
+F 1 "1n" V 13750 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13725 1450 50  0001 C CNN
+F 3 "~" H 13725 1450 50  0001 C CNN
+F 4 "C35216" V 13725 1450 50  0001 C CNN "JLCPCB"
+	1    13725 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_20
+U 1 1 60B300D2
+P 13875 1450
+F 0 "C_TMC_20" V 13825 1700 50  0000 L CNN
+F 1 "1n" V 13900 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13875 1450 50  0001 C CNN
+F 3 "~" H 13875 1450 50  0001 C CNN
+F 4 "C35216" V 13875 1450 50  0001 C CNN "JLCPCB"
+	1    13875 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_21
+U 1 1 60B300D9
+P 14025 1450
+F 0 "C_TMC_21" V 13975 1700 50  0000 L CNN
+F 1 "1n" V 14050 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14025 1450 50  0001 C CNN
+F 3 "~" H 14025 1450 50  0001 C CNN
+F 4 "C35216" V 14025 1450 50  0001 C CNN "JLCPCB"
+	1    14025 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_22
+U 1 1 60B300E0
+P 14175 1450
+F 0 "C_TMC_22" V 14125 1700 50  0000 L CNN
+F 1 "1n" V 14200 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14175 1450 50  0001 C CNN
+F 3 "~" H 14175 1450 50  0001 C CNN
+F 4 "C35216" V 14175 1450 50  0001 C CNN "JLCPCB"
+	1    14175 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_23
+U 1 1 60B300E7
+P 14325 1450
+F 0 "C_TMC_23" V 14275 1700 50  0000 L CNN
+F 1 "1n" V 14350 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14325 1450 50  0001 C CNN
+F 3 "~" H 14325 1450 50  0001 C CNN
+F 4 "C35216" V 14325 1450 50  0001 C CNN "JLCPCB"
+	1    14325 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_24
+U 1 1 60B39018
+P 14475 1450
+F 0 "C_TMC_24" V 14425 1700 50  0000 L CNN
+F 1 "1n" V 14500 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14475 1450 50  0001 C CNN
+F 3 "~" H 14475 1450 50  0001 C CNN
+F 4 "C35216" V 14475 1450 50  0001 C CNN "JLCPCB"
+	1    14475 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_TMC_25
+U 1 1 60B3901F
+P 14625 1450
+F 0 "C_TMC_25" V 14575 1700 50  0000 L CNN
+F 1 "1n" V 14650 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14625 1450 50  0001 C CNN
+F 3 "~" H 14625 1450 50  0001 C CNN
+F 4 "C35216" V 14625 1450 50  0001 C CNN "JLCPCB"
+	1    14625 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 1350 11475 1350
+Connection ~ 11475 1350
+Wire Wire Line
+	11475 1350 11625 1350
+Connection ~ 11625 1350
+Wire Wire Line
+	11625 1350 11775 1350
+Connection ~ 11775 1350
+Wire Wire Line
+	11775 1350 11925 1350
+Connection ~ 11925 1350
+Wire Wire Line
+	11925 1350 12075 1350
+Connection ~ 12075 1350
+Wire Wire Line
+	12075 1350 12225 1350
+Connection ~ 12225 1350
+Wire Wire Line
+	12225 1350 12375 1350
+Connection ~ 12375 1350
+Wire Wire Line
+	12375 1350 12525 1350
+Connection ~ 12525 1350
+Wire Wire Line
+	12525 1350 12675 1350
+Connection ~ 12675 1350
+Wire Wire Line
+	12675 1350 12825 1350
+Connection ~ 12825 1350
+Wire Wire Line
+	12825 1350 12975 1350
+Connection ~ 12975 1350
+Wire Wire Line
+	12975 1350 13125 1350
+Connection ~ 13125 1350
+Wire Wire Line
+	13125 1350 13275 1350
+Connection ~ 13275 1350
+Wire Wire Line
+	13275 1350 13425 1350
+Connection ~ 13425 1350
+Wire Wire Line
+	13425 1350 13575 1350
+Connection ~ 13575 1350
+Wire Wire Line
+	13575 1350 13725 1350
+Connection ~ 13725 1350
+Wire Wire Line
+	13725 1350 13875 1350
+Connection ~ 13875 1350
+Wire Wire Line
+	13875 1350 14025 1350
+Connection ~ 14025 1350
+Wire Wire Line
+	14025 1350 14175 1350
+Connection ~ 14175 1350
+Wire Wire Line
+	14175 1350 14325 1350
+Connection ~ 14325 1350
+Wire Wire Line
+	14325 1350 14475 1350
+Connection ~ 14475 1350
+Wire Wire Line
+	14475 1350 14625 1350
+Wire Wire Line
+	11475 1550 11625 1550
+Connection ~ 11625 1550
+Wire Wire Line
+	11625 1550 11775 1550
+Connection ~ 11775 1550
+Wire Wire Line
+	11775 1550 11925 1550
+Connection ~ 11925 1550
+Wire Wire Line
+	11925 1550 12075 1550
+Connection ~ 12075 1550
+Wire Wire Line
+	12075 1550 12225 1550
+Connection ~ 12225 1550
+Wire Wire Line
+	12225 1550 12375 1550
+Connection ~ 12375 1550
+Wire Wire Line
+	12375 1550 12525 1550
+Connection ~ 12525 1550
+Wire Wire Line
+	12525 1550 12675 1550
+Connection ~ 12675 1550
+Wire Wire Line
+	12675 1550 12825 1550
+Connection ~ 12825 1550
+Wire Wire Line
+	12825 1550 12975 1550
+Connection ~ 12975 1550
+Wire Wire Line
+	12975 1550 13125 1550
+Connection ~ 13125 1550
+Wire Wire Line
+	13125 1550 13275 1550
+Connection ~ 13275 1550
+Wire Wire Line
+	13275 1550 13425 1550
+Connection ~ 13425 1550
+Wire Wire Line
+	13425 1550 13575 1550
+Connection ~ 13575 1550
+Wire Wire Line
+	13575 1550 13725 1550
+Connection ~ 13725 1550
+Wire Wire Line
+	13725 1550 13875 1550
+Connection ~ 13875 1550
+Wire Wire Line
+	13875 1550 14025 1550
+Connection ~ 14025 1550
+Wire Wire Line
+	14025 1550 14175 1550
+Connection ~ 14175 1550
+Wire Wire Line
+	14175 1550 14325 1550
+Connection ~ 14325 1550
+Wire Wire Line
+	14325 1550 14475 1550
+Connection ~ 14475 1550
+Wire Wire Line
+	14475 1550 14625 1550
+Connection ~ 14625 1550
+Wire Wire Line
+	14625 1550 14750 1550
+$Comp
+L Device:C_Small C_TMC_14
+U 1 1 60B5D472
+P 13075 1825
+F 0 "C_TMC_14" H 13300 1775 50  0000 C CNN
+F 1 "100nF" H 13275 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 13075 1825 50  0001 C CNN
+F 3 "~" H 13075 1825 50  0001 C CNN
+F 4 "C24497" V 13075 1825 50  0001 C CNN "JLCPCB"
+	1    13075 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR06
+U 1 1 60BA167E
+P 13075 1925
+F 0 "#PWR06" H 13075 1675 50  0001 C CNN
+F 1 "Earth" H 13075 1775 50  0001 C CNN
+F 2 "" H 13075 1925 50  0001 C CNN
+F 3 "~" H 13075 1925 50  0001 C CNN
+	1    13075 1925
+	1    0    0    -1  
+$EndComp
+Text GLabel 13575 1725 2    39   Input ~ 0
+TMC-CP-48v
+Wire Wire Line
+	12775 1725 13075 1725
+Connection ~ 13075 1725
+Wire Wire Line
+	13075 1725 13575 1725
+Text Notes 13850 800  2    118  ~ 24
+TMC Charge Pump
+Wire Notes Line width 39 style solid
+	14925 550  11200 550 
+Wire Notes Line width 39 style solid
+	11200 550  11200 2100
+Wire Notes Line width 39 style solid
+	11200 2100 14925 2100
+Wire Notes Line width 39 style solid
+	14925 550  14925 2100
+$Comp
+L Transistor_FET:CSD18537NQ5A Q4
+U 1 1 60574634
+P 13950 5350
+F 0 "Q4" H 14155 5396 50  0000 L CNN
+F 1 "CSD18537NQ5A" H 14155 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 14150 5275 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd18537nq5a" V 13950 5350 50  0001 L CNN
+F 4 "C72266" H 13950 5350 50  0001 C CNN "JLCPCB"
+	1    13950 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:CSD18537NQ5A Q3
+U 1 1 6058C914
+P 12325 5350
+F 0 "Q3" H 12530 5396 50  0000 L CNN
+F 1 "CSD18537NQ5A" H 12530 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 12525 5275 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd18537nq5a" V 12325 5350 50  0001 L CNN
+F 4 "C72266" H 12325 5350 50  0001 C CNN "JLCPCB"
+	1    12325 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:CSD18537NQ5A Q2
+U 1 1 6058C91B
+P 12325 4200
+F 0 "Q2" H 12530 4246 50  0000 L CNN
+F 1 "CSD18537NQ5A" H 12530 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 12525 4125 50  0001 L CIN
+F 3 "http://www.ti.com/lit/gpn/csd18537nq5a" V 12325 4200 50  0001 L CNN
+F 4 "C72266" H 12325 4200 50  0001 C CNN "JLCPCB"
+	1    12325 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 13750 3500 0    39   Input ~ 0
+TMC-CP-48v
+$Comp
+L power:+48V #PWR013
+U 1 1 605DFE96
+P 13850 3375
+F 0 "#PWR013" H 13850 3225 50  0001 C CNN
+F 1 "+48V" V 13865 3503 50  0000 L CNN
+F 2 "" H 13850 3375 50  0001 C CNN
+F 3 "" H 13850 3375 50  0001 C CNN
+	1    13850 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 3375 13850 3500
+Wire Wire Line
+	13750 3500 13850 3500
+Connection ~ 13850 3500
+$Comp
+L Device:C_Small C_tmc_8
+U 1 1 6071B7FC
+P 14150 3675
+F 0 "C_tmc_8" H 14242 3721 50  0000 L CNN
+F 1 "4.7uF" H 14242 3630 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14150 3675 50  0001 C CNN
+F 3 "~" H 14150 3675 50  0001 C CNN
+F 4 "C29823" H 14150 3675 50  0001 C CNN "JLCPCB"
+	1    14150 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR014
+U 1 1 607216D0
+P 14150 3775
+F 0 "#PWR014" H 14150 3525 50  0001 C CNN
+F 1 "Earth" H 14150 3625 50  0001 C CNN
+F 2 "" H 14150 3775 50  0001 C CNN
+F 3 "~" H 14150 3775 50  0001 C CNN
+	1    14150 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 3500 13850 3575
+Wire Wire Line
+	14150 3575 13850 3575
+Connection ~ 13850 3575
+Wire Wire Line
+	13850 3575 13850 4000
+$Comp
+L Device:C_Small C_tmc_9
+U 1 1 607B0955
+P 14650 3675
+F 0 "C_tmc_9" H 14742 3721 50  0000 L CNN
+F 1 "100nF" H 14742 3630 50  0000 L CNN
+F 2 "" H 14650 3675 50  0001 C CNN
+F 3 "~" H 14650 3675 50  0001 C CNN
+F 4 "C1525" H 14650 3675 50  0001 C CNN "JLCPCB"
+	1    14650 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR015
+U 1 1 607BE1BA
+P 14650 3775
+F 0 "#PWR015" H 14650 3525 50  0001 C CNN
+F 1 "Earth" H 14650 3625 50  0001 C CNN
+F 2 "" H 14650 3775 50  0001 C CNN
+F 3 "~" H 14650 3775 50  0001 C CNN
+	1    14650 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 3575 14650 3575
+Connection ~ 14150 3575
+Wire Wire Line
+	13850 4000 12425 4000
+Connection ~ 13850 4000
+$Comp
+L Device:R_Small_US R_tmc_10
+U 1 1 6080BAA0
+P 14400 4200
+F 0 "R_tmc_10" V 14195 4200 50  0000 C CNN
+F 1 "10Ohm" V 14286 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 14400 4200 50  0001 C CNN
+F 3 "~" H 14400 4200 50  0001 C CNN
+F 4 "C17903" V 14400 4200 50  0001 C CNN "JLCPCB"
+	1    14400 4200
+	0    1    1    0   
+$EndComp
+Text GLabel 4850 6150 2    39   Input ~ 0
+TMC_HA1
+Text GLabel 11850 4200 0    39   Input ~ 0
+TMC_HA1
+Wire Wire Line
+	14500 4200 14575 4200
+Wire Wire Line
+	14300 4200 14150 4200
+Text GLabel 14575 4200 2    39   Input ~ 0
+TMC_HA2
+Text GLabel 4850 6225 2    39   Input ~ 0
+TMC_HA2
+$Comp
+L Device:R_Small_US R_tmc_2
+U 1 1 60889AED
+P 12025 4200
+F 0 "R_tmc_2" V 11820 4200 50  0000 C CNN
+F 1 "10Ohm" V 11911 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 12025 4200 50  0001 C CNN
+F 3 "~" H 12025 4200 50  0001 C CNN
+F 4 "C17903" V 12025 4200 50  0001 C CNN "JLCPCB"
+	1    12025 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11925 4200 11850 4200
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 608CEF13
+P 6425 10250
+F 0 "J1" H 6453 10226 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6453 10135 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Nano-Fit_105310-xx04_2x02_P2.50mm_Vertical" H 6425 10250 50  0001 C CNN
+F 3 "~" H 6425 10250 50  0001 C CNN
+	1    6425 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_tmc_4
+U 1 1 6091BAEF
+P 11000 3850
+F 0 "C_tmc_4" V 10771 3850 50  0000 C CNN
+F 1 "220nF" V 10862 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11000 3850 50  0001 C CNN
+F 3 "~" H 11000 3850 50  0001 C CNN
+F 4 "C1857" H 11000 3850 50  0001 C CNN "JLCPCB"
+	1    11000 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 4850 5625 2    39   Input ~ 0
+TMC_CA2
+Text GLabel 10825 3850 0    39   Input ~ 0
+TMC_CA2
+Text GLabel 10825 4200 0    39   Input ~ 0
+TMC_CA1
+Text GLabel 4850 5550 2    39   Input ~ 0
+TMC_CA1
+$Comp
+L Device:C_Small C_tmc_5
+U 1 1 609CD080
+P 11000 4200
+F 0 "C_tmc_5" V 10771 4200 50  0000 C CNN
+F 1 "220nF" V 10862 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 11000 4200 50  0001 C CNN
+F 3 "~" H 11000 4200 50  0001 C CNN
+F 4 "C1857" H 11000 4200 50  0001 C CNN "JLCPCB"
+	1    11000 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10825 4200 10900 4200
+Wire Wire Line
+	10825 3850 10900 3850
+Text GLabel 4850 6500 2    39   Input ~ 0
+TMC_BMA1
+Text GLabel 11075 4450 0    39   Input ~ 0
+TMC_BMA1
+Text GLabel 4850 6575 2    39   Input ~ 0
+TMC_BMA2
+Text GLabel 11100 5000 0    39   Input ~ 0
+TMC_BMA2
+$Comp
+L Device:R_Small_US R_tmc_7
+U 1 1 60A9DD1E
+P 13000 5000
+F 0 "R_tmc_7" V 12795 5000 50  0000 C CNN
+F 1 "10Ohm" V 12886 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 13000 5000 50  0001 C CNN
+F 3 "~" H 13000 5000 50  0001 C CNN
+F 4 "C17903" V 13000 5000 50  0001 C CNN "JLCPCB"
+	1    13000 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 5000 13850 5000
+Wire Wire Line
+	11100 3850 11450 3850
+Wire Wire Line
+	11100 5000 11325 5000
+Wire Wire Line
+	11450 3850 11450 5000
+Connection ~ 11450 5000
+Wire Wire Line
+	11450 5000 12900 5000
+Wire Wire Line
+	13850 4400 13850 5000
+Connection ~ 13850 5000
+Text GLabel 6225 10150 0    39   Input ~ 0
+Stepper_Loop_1_1
+Text GLabel 6225 10250 0    39   Input ~ 0
+Stepper_Loop_1_2
+Text GLabel 6225 10350 0    39   Input ~ 0
+Stepper_Loop_2_1
+Text GLabel 6225 10450 0    39   Input ~ 0
+Stepper_Loop_2_2
+$Comp
+L Device:C_Small C_TMC_27
+U 1 1 60C3D79D
+P 15225 5225
+F 0 "C_TMC_27" H 14825 5275 50  0000 L CNN
+F 1 "1n" H 15025 5200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 15225 5225 50  0001 C CNN
+F 3 "~" H 15225 5225 50  0001 C CNN
+F 4 "C35216" V 15225 5225 50  0001 C CNN "JLCPCB"
+	1    15225 5225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15225 5075 15225 5125
+Text GLabel 15300 5075 2    39   Input ~ 0
+Stepper_Loop_1_2
+Wire Wire Line
+	15300 5075 15225 5075
+$Comp
+L power:Earth #PWR017
+U 1 1 60C94F53
+P 15225 5325
+F 0 "#PWR017" H 15225 5075 50  0001 C CNN
+F 1 "Earth" H 15225 5175 50  0001 C CNN
+F 2 "" H 15225 5325 50  0001 C CNN
+F 3 "~" H 15225 5325 50  0001 C CNN
+	1    15225 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R_tmc_3
+U 1 1 60CDB597
+P 12025 5350
+F 0 "R_tmc_3" V 11820 5350 50  0000 C CNN
+F 1 "10Ohm" V 11911 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 12025 5350 50  0001 C CNN
+F 3 "~" H 12025 5350 50  0001 C CNN
+F 4 "C17903" V 12025 5350 50  0001 C CNN "JLCPCB"
+	1    12025 5350
+	0    1    1    0   
+$EndComp
+Text GLabel 11925 5350 0    39   Input ~ 0
+TMC_LA1
+Wire Wire Line
+	12425 4400 12425 4450
+$Comp
+L Device:R_Small_US R_tmc_4
+U 1 1 60D4C86A
+P 12075 4450
+F 0 "R_tmc_4" V 12200 4450 50  0000 C CNN
+F 1 "10Ohm" V 12150 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 12075 4450 50  0001 C CNN
+F 3 "~" H 12075 4450 50  0001 C CNN
+F 4 "C17903" V 12075 4450 50  0001 C CNN "JLCPCB"
+	1    12075 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11075 4450 11200 4450
+Wire Wire Line
+	12175 4450 12425 4450
+Connection ~ 12425 4450
+Wire Wire Line
+	12425 4450 12425 4525
+$Comp
+L Device:C_Small C_TMC_26
+U 1 1 60DC2D15
+P 15225 4700
+F 0 "C_TMC_26" H 14825 4750 50  0000 L CNN
+F 1 "1n" H 15025 4675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 15225 4700 50  0001 C CNN
+F 3 "~" H 15225 4700 50  0001 C CNN
+F 4 "C35216" V 15225 4700 50  0001 C CNN "JLCPCB"
+	1    15225 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR016
+U 1 1 60DC2D1B
+P 15225 4800
+F 0 "#PWR016" H 15225 4550 50  0001 C CNN
+F 1 "Earth" H 15225 4650 50  0001 C CNN
+F 2 "" H 15225 4800 50  0001 C CNN
+F 3 "~" H 15225 4800 50  0001 C CNN
+	1    15225 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 15300 4525 2    39   Input ~ 0
+Stepper_Loop_1_1
+Wire Wire Line
+	13850 5000 13850 5075
+Wire Wire Line
+	15225 5075 13850 5075
+Connection ~ 15225 5075
+Connection ~ 13850 5075
+Wire Wire Line
+	13850 5075 13850 5150
+Wire Wire Line
+	11100 4200 11275 4200
+Wire Wire Line
+	11275 4200 11275 4450
+Connection ~ 11275 4450
+Wire Wire Line
+	11275 4450 11975 4450
+$Comp
+L power:Earth #PWR010
+U 1 1 60E721F0
+P 4425 7600
+F 0 "#PWR010" H 4425 7350 50  0001 C CNN
+F 1 "Earth" H 4425 7450 50  0001 C CNN
+F 2 "" H 4425 7600 50  0001 C CNN
+F 3 "~" H 4425 7600 50  0001 C CNN
+	1    4425 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR07
+U 1 1 60E81E50
+P 4200 7600
+F 0 "#PWR07" H 4200 7350 50  0001 C CNN
+F 1 "Earth" H 4200 7450 50  0001 C CNN
+F 2 "" H 4200 7600 50  0001 C CNN
+F 3 "~" H 4200 7600 50  0001 C CNN
+	1    4200 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR08
+U 1 1 60E91D47
+P 4275 7600
+F 0 "#PWR08" H 4275 7350 50  0001 C CNN
+F 1 "Earth" H 4275 7450 50  0001 C CNN
+F 2 "" H 4275 7600 50  0001 C CNN
+F 3 "~" H 4275 7600 50  0001 C CNN
+	1    4275 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR09
+U 1 1 60EA0E36
+P 4350 7600
+F 0 "#PWR09" H 4350 7350 50  0001 C CNN
+F 1 "Earth" H 4350 7450 50  0001 C CNN
+F 2 "" H 4350 7600 50  0001 C CNN
+F 3 "~" H 4350 7600 50  0001 C CNN
+	1    4350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R_tmc_9
+U 1 1 60EBA57A
+P 14250 5350
+F 0 "R_tmc_9" V 14045 5350 50  0000 C CNN
+F 1 "10Ohm" V 14136 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 14250 5350 50  0001 C CNN
+F 3 "~" H 14250 5350 50  0001 C CNN
+F 4 "C17903" V 14250 5350 50  0001 C CNN "JLCPCB"
+	1    14250 5350
+	0    1    1    0   
+$EndComp
+Text GLabel 14350 5350 2    39   Input ~ 0
+TMC_LA2
+Text GLabel 4850 5851 2    39   Input ~ 0
+TMC_LA1
+Text GLabel 4850 5926 2    39   Input ~ 0
+TMC_LA2
+Wire Wire Line
+	13850 5550 13600 5550
+$Comp
+L Device:C_Small C_tmc_7
+U 1 1 60F9FED4
+P 13600 5800
+F 0 "C_tmc_7" H 13692 5846 50  0000 L CNN
+F 1 "100nF" H 13692 5755 50  0000 L CNN
+F 2 "" H 13600 5800 50  0001 C CNN
+F 3 "~" H 13600 5800 50  0001 C CNN
+F 4 "C1525" H 13600 5800 50  0001 C CNN "JLCPCB"
+	1    13600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR012
+U 1 1 60F9FEDA
+P 13600 5900
+F 0 "#PWR012" H 13600 5650 50  0001 C CNN
+F 1 "Earth" H 13600 5750 50  0001 C CNN
+F 2 "" H 13600 5900 50  0001 C CNN
+F 3 "~" H 13600 5900 50  0001 C CNN
+	1    13600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 5700 13600 5550
+Connection ~ 13600 5550
+Wire Wire Line
+	13600 5550 13050 5550
+Connection ~ 12425 4525
+Wire Wire Line
+	12425 4525 12425 5150
+Wire Wire Line
+	12425 4525 15225 4525
+Wire Wire Line
+	15225 4600 15225 4525
+Connection ~ 15225 4525
+Wire Wire Line
+	15225 4525 15300 4525
+Text GLabel 3750 6176 0    39   Input ~ 0
+TMC_SRAH
+Text GLabel 3750 6326 0    39   Input ~ 0
+TMC_SRAL
+Text GLabel 12050 5900 0    39   Input ~ 0
+TMC_SRAH
+Text GLabel 12050 6250 0    39   Input ~ 0
+TMC_SRAL
+$Comp
+L Device:C_Small C_tmc_6
+U 1 1 610C5AB6
+P 12275 6075
+F 0 "C_tmc_6" H 12367 6121 50  0000 L CNN
+F 1 "2.2u" H 12367 6030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12275 6075 50  0001 C CNN
+F 3 "~" H 12275 6075 50  0001 C CNN
+F 4 "C23630" H 12275 6075 50  0001 C CNN "JLCPCB"
+	1    12275 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R_tmc_6
+U 1 1 610F365C
+P 12725 6300
+F 0 "R_tmc_6" V 12509 6279 50  0000 C CNN
+F 1 "47R" V 12609 6329 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12725 6300 50  0001 C CNN
+F 3 "~" H 12725 6300 50  0001 C CNN
+F 4 "C17714" H 12725 6300 50  0001 C CNN "JLCPCB"
+	1    12725 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R_tmc_8
+U 1 1 6110AADA
+P 13050 5950
+F 0 "R_tmc_8" V 13175 5950 50  0000 C CNN
+F 1 "10Ohm" V 13125 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 13050 5950 50  0001 C CNN
+F 3 "~" H 13050 5950 50  0001 C CNN
+F 4 "C17903" V 13050 5950 50  0001 C CNN "JLCPCB"
+	1    13050 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR011
+U 1 1 6111C1CA
+P 13050 6350
+F 0 "#PWR011" H 13050 6100 50  0001 C CNN
+F 1 "Earth" H 13050 6200 50  0001 C CNN
+F 2 "" H 13050 6350 50  0001 C CNN
+F 3 "~" H 13050 6350 50  0001 C CNN
+	1    13050 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 6050 13050 6300
+Wire Wire Line
+	12275 6300 12275 6250
+Wire Wire Line
+	12275 6300 12625 6300
+Wire Wire Line
+	12825 6300 13050 6300
+Connection ~ 13050 6300
+Wire Wire Line
+	13050 6300 13050 6350
+Wire Wire Line
+	12050 6250 12275 6250
+Connection ~ 12275 6250
+Wire Wire Line
+	12275 6250 12275 6175
+Connection ~ 13050 5550
+Wire Wire Line
+	13050 5550 12425 5550
+Wire Wire Line
+	12275 5975 12275 5900
+Wire Wire Line
+	13050 5550 13050 5825
+$Comp
+L Device:R_Small_US R_tmc_5
+U 1 1 6127D75B
+P 12725 5825
+F 0 "R_tmc_5" V 12875 5825 50  0000 C CNN
+F 1 "47R" V 12800 5825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12725 5825 50  0001 C CNN
+F 3 "~" H 12725 5825 50  0001 C CNN
+F 4 "C17714" H 12725 5825 50  0001 C CNN "JLCPCB"
+	1    12725 5825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12275 5825 12625 5825
+Wire Wire Line
+	12825 5825 13050 5825
+Connection ~ 13050 5825
+Wire Wire Line
+	13050 5825 13050 5850
+Wire Wire Line
+	12050 5900 12275 5900
+Connection ~ 12275 5900
+Wire Wire Line
+	12275 5900 12275 5825
+Text Notes 10775 3325 0    118  ~ 24
+Stepper Loop 1 Mosfets
+Wire Notes Line width 39 style solid
+	15950 2850 15950 6650
+Wire Notes Line width 39 style solid
+	15950 6650 10400 6650
+Wire Notes Line width 39 style solid
+	10400 6650 10400 2850
+Wire Notes Line width 39 style solid
+	10400 2850 15950 2850
+$Comp
+L Device:D_Schottky_Small D_tmc_?
+U 1 1 61484B9F
+P 11325 5250
+F 0 "D_tmc_?" H 11225 5325 50  0000 L CNN
+F 1 "STPS3L60U" H 11175 5400 50  0000 L CNN
+F 2 "Diode_SMD:D_2114_3652Metric" V 11325 5250 50  0001 C CNN
+F 3 "~" V 11325 5250 50  0001 C CNN
+F 4 "C132769" V 11325 5250 50  0001 C CNN "JLCPCB"
+	1    11325 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 614C0D26
+P 11325 5350
+F 0 "#PWR?" H 11325 5100 50  0001 C CNN
+F 1 "Earth" H 11325 5200 50  0001 C CNN
+F 2 "" H 11325 5350 50  0001 C CNN
+F 3 "~" H 11325 5350 50  0001 C CNN
+	1    11325 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D_tmc_?
+U 1 1 614C4031
+P 11200 5250
+F 0 "D_tmc_?" H 11100 5150 50  0000 L CNN
+F 1 "STPS3L60U" H 11025 5075 50  0000 L CNN
+F 2 "Diode_SMD:D_2114_3652Metric" V 11200 5250 50  0001 C CNN
+F 3 "~" V 11200 5250 50  0001 C CNN
+F 4 "C132769" V 11200 5250 50  0001 C CNN "JLCPCB"
+	1    11200 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 614C4037
+P 11200 5350
+F 0 "#PWR?" H 11200 5100 50  0001 C CNN
+F 1 "Earth" H 11200 5200 50  0001 C CNN
+F 2 "" H 11200 5350 50  0001 C CNN
+F 3 "~" H 11200 5350 50  0001 C CNN
+	1    11200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 5150 11200 4450
+Connection ~ 11200 4450
+Wire Wire Line
+	11200 4450 11275 4450
+Wire Wire Line
+	11325 5150 11325 5000
+Connection ~ 11325 5000
+Wire Wire Line
+	11325 5000 11450 5000
+$EndSCHEMATC

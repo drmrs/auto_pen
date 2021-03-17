@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name main_board)(type KiCad)(uri ${KIPRJMOD}/main_board.pretty)(options "")(descr ""))
+  (lib (name trinamic-footprints)(type KiCad)(uri /home/caitlin/dev/digikey-partner-kicad-library/Trinamic/trinamic-footprints.pretty)(options "")(descr ""))
+)
