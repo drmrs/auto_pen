@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS1128-S80BP
+D DS1128-S80BP PCB Jack 8P 1Port
+K
+F https://datasheet.lcsc.com/szlcsc/1811141110_CONNFLY-Elec-DS1128-S80BP_C86586.pdf
+$ENDCMP
+#
+#End Doc Library

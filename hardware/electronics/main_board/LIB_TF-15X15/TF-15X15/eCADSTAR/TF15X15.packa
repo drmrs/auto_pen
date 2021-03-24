@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TF-15X15"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-05-26-15:52:50)
+    (mountForm default
+        (footprintRef "TF15X15")
+        (spec "System")
+    )
+)

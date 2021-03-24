@@ -1,0 +1,19 @@
+.TF-15X15 :1 ;Micro-SD Card Socket
+TF15X15
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9 10=MP1 11=MP2 12=MP3 13=MP4
+*PLB 1="DAT2" 2="CD/DAT3" 3="CMD" 4="VDD" 5="CLX" 6="VSS" 7="DAT0" 8="DAT1" 9="CARD DETECT" 10="MP1" 11="MP2" 12="MP3" 13="MP4"
+*MXP 15
+*DFN TF-15X15
+~!Manufacturer_Name (SOFNG)
+~!Manufacturer_Part_Number (TF-15X15)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheet.lcsc.com/szlcsc/SOFNG-TF-15-15_C111196.pdf)
+~!Height (1.85mm)
+~!3D_Model (TF-15X15)
+TF-15X15
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 

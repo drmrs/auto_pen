@@ -1,0 +1,9 @@
+Manufacturer=CONNFLY Elec
+PartNumber=DS1128-S80BP
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.5
+Released=2021-01-31 21:24:25
+Downloaded=2021-03-20 03:07:49
+3D=Y

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DS1128_S80BP'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "CONNFLY Elec", "DS1128-S80BP" (!) = "", "DS1128S80BP", "Other", "", "", "", "", "DS1128-S80BP PCB Jack 8P 1Port", "https://datasheet.lcsc.com/szlcsc/1811141110_CONNFLY-Elec-DS1128-S80BP_C86586.pdf", "13.88 mm"
+END_PART
+
+END.

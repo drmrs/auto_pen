@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TF_15X15'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "SOFNG", "TF-15X15" (!) = "", "TF15X15", "Other", "", "", "", "", "Micro-SD Card Socket", "https://datasheet.lcsc.com/szlcsc/SOFNG-TF-15-15_C111196.pdf", "1.85 mm"
+END_PART
+
+END.

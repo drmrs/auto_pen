@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 215877-1
+#/634575/450452/2.49/8/4/Connector
+DEF 215877-1 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "215877-1" 650 200 50 H V L CNN
+F2 "2158771" 650 100 50 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=215877&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=215877-1" 650 0 50 H I L CNN
+F4 "TE Connectivity Cat3 8P8C-Way Female RJ45 Socket Right Angle Through Hole Unshielded" 650 -100 50 H I L CNN "Description"
+F5 "11.5" 650 -200 50 H I L CNN "Height"
+F6 "TE Connectivity" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "215877-1" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "571-2158771" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/215877-1?qs=m7RwewakXS9hoFpoHd7ZkA%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "215877-1" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/215877-1/te-connectivity" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 800 0 200 L 50 50 0 0 P
+X 3 3 0 -100 200 R 50 50 0 0 P
+X 4 4 800 -100 200 L 50 50 0 0 P
+X 5 5 0 -200 200 R 50 50 0 0 P
+X 6 6 800 -200 200 L 50 50 0 0 P
+X 7 7 0 -300 200 R 50 50 0 0 P
+X 8 8 800 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

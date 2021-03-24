@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TF15X15"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TF15X15")
+        (spec "default")
+    )
+)

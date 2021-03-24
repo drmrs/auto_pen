@@ -1,0 +1,9 @@
+Manufacturer=TE Connectivity
+PartNumber=215877-1
+PartCategory=Connector
+PackageCategory=Other
+PinCount=8
+Version=1.2
+Released=2019-03-26 12:18:05
+Downloaded=2021-03-20 03:26:39
+3D=Y

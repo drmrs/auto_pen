@@ -1,0 +1,19 @@
+.DS1128-S80BP :1 ;DS1128-S80BP PCB Jack 8P 1Port
+DS1128S80BP
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=MH3 10=MH4
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7" 8="8" 9="MH3" 10="MH4"
+*MXP 12
+*DFN DS1128-S80BP
+~!Manufacturer_Name (CONNFLY Elec)
+~!Manufacturer_Part_Number (DS1128-S80BP)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheet.lcsc.com/szlcsc/1811141110_CONNFLY-Elec-DS1128-S80BP_C86586.pdf)
+~!Height (13.88mm)
+~!3D_Model (DS1128-S80BP)
+DS1128-S80BP
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 

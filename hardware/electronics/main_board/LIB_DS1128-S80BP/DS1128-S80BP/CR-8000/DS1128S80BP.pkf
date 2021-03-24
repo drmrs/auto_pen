@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "DS1128S80BP"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "DS1128S80BP")
+        (spec "default")
+    )
+)

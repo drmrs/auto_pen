@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "L4978D"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-09-29-05:43:15)
+    (mountForm default
+        (footprintRef "SOIC127P1032X265-16N")
+        (spec "System")
+    )
+)

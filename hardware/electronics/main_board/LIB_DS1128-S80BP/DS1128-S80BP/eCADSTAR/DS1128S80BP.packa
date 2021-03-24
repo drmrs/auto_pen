@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "DS1128-S80BP"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-01-31-21:24:25)
+    (mountForm default
+        (footprintRef "DS1128S80BP")
+        (spec "System")
+    )
+)

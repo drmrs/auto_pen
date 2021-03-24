@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model L4978D
+#/179357/450452/2.49/16/3/Integrated Circuit
+DEF L4978D IC 0 30 Y Y 1 F N
+F0 "IC" 1150 300 50 H V L CNN
+F1 "L4978D" 1150 200 50 H V L CNN
+F2 "SOIC127P1032X265-16N" 1150 100 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0daf/0900766b80daf37d.pdf" 1150 0 50 H I L CNN
+F4 "L4978D, Switching Regulator, Buck Controller, 2A, Adjustable, 3.3  50 V, 300 kHz, 16-Pin SO W" 1150 -100 50 H I L CNN "Description"
+F5 "2.65" 1150 -200 50 H I L CNN "Height"
+F6 "STMicroelectronics" 1150 -300 50 H I L CNN "Manufacturer_Name"
+F7 "L4978D" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "511-L4978D" 1150 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L4978D?qs=7b1TReoOb8cDioVX931E9A%3D%3D" 1150 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "L4978D" 1150 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/l4978d/stmicroelectronics" 1150 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X N.C._1 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X SS_INH 3 0 -200 200 R 50 50 0 0 P
+X OSC 4 0 -300 200 R 50 50 0 0 P
+X OUT_1 5 0 -400 200 R 50 50 0 0 P
+X OUT_2 6 0 -500 200 R 50 50 0 0 P
+X N.C._2 7 0 -600 200 R 50 50 0 0 P
+X N.C._3 8 0 -700 200 R 50 50 0 0 P
+X N.C._7 16 1300 0 200 L 50 50 0 0 P
+X N.C._6 15 1300 -100 200 L 50 50 0 0 P
+X FB 14 1300 -200 200 L 50 50 0 0 P
+X COMP 13 1300 -300 200 L 50 50 0 0 P
+X BOOT 12 1300 -400 200 L 50 50 0 0 P
+X VCC 11 1300 -500 200 L 50 50 0 0 P
+X N.C._5 10 1300 -600 200 L 50 50 0 0 P
+X N.C._4 9 1300 -700 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1100 100 1100 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

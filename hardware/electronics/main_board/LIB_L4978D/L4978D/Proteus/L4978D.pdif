@@ -1,0 +1,194 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "L4978D"
+   (description "L4978D, Switching Regulator, Buck Controller, 2A, Adjustable, 3.3  50 V, 300 kHz, 16-Pin SO W")
+   (family "ANA")
+   (package "SOIC127P1032X265-16N")
+   (attribute "Datasheet Link" "http://docs-emea.rs-online.com/webdocs/0daf/0900766b80daf37d.pdf")
+   (attribute "Geometry.Height" "2.65mm")
+   (attribute "Manufacturer_Name" "STMicroelectronics")
+   (attribute "Manufacturer_Part_Number" "L4978D")
+   (attribute "Mouser Part Number" "511-L4978D")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L4978D?qs=7b1TReoOb8cDioVX931E9A%3D%3D")
+   (attribute "Arrow Part Number" "L4978D")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/l4978d/stmicroelectronics")
+   (gate
+    (symbol "L4978D")
+    (pin "N.C._1" 1 PS)
+    (pin "GND" 2 PS)
+    (pin "SS_INH" 3 PS)
+    (pin "OSC" 4 PS)
+    (pin "OUT_1" 5 PS)
+    (pin "OUT_2" 6 PS)
+    (pin "N.C._2" 7 PS)
+    (pin "N.C._3" 8 PS)
+    (pin "N.C._7" 16 PS)
+    (pin "N.C._6" 15 PS)
+    (pin "FB" 14 PS)
+    (pin "COMP" 13 PS)
+    (pin "BOOT" 12 PS)
+    (pin "VCC" 11 PS)
+    (pin "N.C._5" 10 PS)
+    (pin "N.C._4" 9 PS)
+   )
+  )
+  (symbol "L4978D"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1100 100) (pt 1100 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOIC127P1032X265-16N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.925 5.5)
+      (pt 5.925 5.5)
+      (pt 5.925 -5.5)
+      (pt -5.925 -5.5)
+      (pt -5.925 5.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.75 5.15)
+      (pt 3.75 5.15)
+      (pt 3.75 -5.15)
+      (pt -3.75 -5.15)
+      (pt -3.75 5.15))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.75 3.88)
+      (pt -2.48 5.15))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.4 5.15)
+      (pt 3.4 5.15)
+      (pt 3.4 -5.15)
+      (pt -3.4 -5.15)
+      (pt -3.4 5.15))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5.675 5.145)
+      (pt -3.75 5.145))))
+   (leg 1 (pt -4.712 4.445) (padstack 0))
+   (leg 2 (pt -4.712 3.175) (padstack 0))
+   (leg 3 (pt -4.712 1.905) (padstack 0))
+   (leg 4 (pt -4.712 0.635) (padstack 0))
+   (leg 5 (pt -4.712 -0.635) (padstack 0))
+   (leg 6 (pt -4.712 -1.905) (padstack 0))
+   (leg 7 (pt -4.712 -3.175) (padstack 0))
+   (leg 8 (pt -4.712 -4.445) (padstack 0))
+   (leg 9 (pt 4.712 -4.445) (padstack 0))
+   (leg 10 (pt 4.712 -3.175) (padstack 0))
+   (leg 11 (pt 4.712 -1.905) (padstack 0))
+   (leg 12 (pt 4.712 -0.635) (padstack 0))
+   (leg 13 (pt 4.712 0.635) (padstack 0))
+   (leg 14 (pt 4.712 1.905) (padstack 0))
+   (leg 15 (pt 4.712 3.175) (padstack 0))
+   (leg 16 (pt 4.712 4.445) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.925 0 0 0))
+   )
+   (model "L4978D.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

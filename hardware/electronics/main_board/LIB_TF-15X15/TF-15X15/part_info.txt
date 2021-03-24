@@ -1,0 +1,9 @@
+Manufacturer=SOFNG
+PartNumber=TF-15X15
+PartCategory=Connector
+PackageCategory=Other
+PinCount=13
+Version=1.4
+Released=2019-05-26 15:52:50
+Downloaded=2021-03-19 03:26:29
+3D=Y

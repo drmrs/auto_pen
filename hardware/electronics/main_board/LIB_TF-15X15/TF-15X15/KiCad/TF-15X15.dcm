@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TF-15X15
+D Micro-SD Card Socket
+K
+F https://datasheet.lcsc.com/szlcsc/SOFNG-TF-15-15_C111196.pdf
+$ENDCMP
+#
+#End Doc Library

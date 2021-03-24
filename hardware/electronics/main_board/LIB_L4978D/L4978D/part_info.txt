@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=L4978D
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=16
+Version=2.1
+Released=2015-04-13 16:52:14
+Downloaded=2021-03-21 04:49:29
+3D=Y

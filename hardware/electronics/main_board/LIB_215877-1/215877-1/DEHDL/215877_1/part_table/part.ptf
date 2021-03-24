@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '215877_1'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "215877-1" (!) = "", "2158771", "Other", "571-2158771", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/215877-1?qs=m7RwewakXS9hoFpoHd7ZkA%3D%3D", "215877-1", "https://www.arrow.com/en/products/215877-1/te-connectivity", "TE Connectivity Cat3 8P8C-Way Female RJ45 Socket Right Angle Through Hole Unshielded", "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=215877&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=215877-1", "11.5 mm"
+END_PART
+
+END.

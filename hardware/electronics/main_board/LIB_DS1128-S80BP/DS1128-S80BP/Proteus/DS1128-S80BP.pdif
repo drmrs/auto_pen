@@ -1,0 +1,185 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "DS1128-S80BP"
+   (description "DS1128-S80BP PCB Jack 8P 1Port")
+   (family "CON")
+   (package "DS1128S80BP")
+   (attribute "Datasheet Link" "https://datasheet.lcsc.com/szlcsc/1811141110_CONNFLY-Elec-DS1128-S80BP_C86586.pdf")
+   (attribute "Geometry.Height" "13.88mm")
+   (attribute "Manufacturer_Name" "CONNFLY Elec")
+   (attribute "Manufacturer_Part_Number" "DS1128-S80BP")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "DS1128-S80BP")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "8" 8 PS)
+    (pin "MH3" MH3 PS)
+    (pin "MH4" MH4 PS)
+   )
+  )
+  (symbol "DS1128-S80BP"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -500) (pt 200 -500) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "DS1128S80BP"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -12.385 1.335)
+      (pt 3.495 1.335)
+      (pt 3.495 -20.065)
+      (pt -12.385 -20.065)
+      (pt -12.385 1.335))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -14.585 2.335)
+      (pt 5.695 2.335)
+      (pt 5.695 -21.065)
+      (pt -14.585 -21.065)
+      (pt -14.585 2.335))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -12.385 -10.16)
+      (pt -12.385 1.335)
+      (pt 3.495 1.335)
+      (pt 3.495 -10.16))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -12.385 -15.24)
+      (pt -12.385 -20.065)
+      (pt 3.495 -20.065)
+      (pt 3.495 -15.24))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt -1.270 -2.540) (padstack 0))
+   (leg 3 (pt -2.540 0.000) (padstack 0))
+   (leg 4 (pt -3.810 -2.540) (padstack 0))
+   (leg 5 (pt -5.080 0.000) (padstack 0))
+   (leg 6 (pt -6.350 -2.540) (padstack 0))
+   (leg 7 (pt -7.620 0.000) (padstack 0))
+   (leg 8 (pt -8.890 -2.540) (padstack 0))
+   (leg MH1 (pt 1.270 -8.890) (padstack 9))
+   (leg MH2 (pt -10.160 -8.890) (padstack 10))
+   (leg MH3 (pt 3.495 -12.570) (padstack 11))
+   (leg MH4 (pt -12.385 -12.570) (padstack 12))
+   (padstack 0
+    (hole 0.9)
+    (plated true)
+    (pad (layer TCOP) (round 1.400))
+    (pad (layer INNER) (round 1.400))
+    (pad (layer BCOP) (round 1.400))
+   )
+   (padstack 9
+    (hole 3.25)
+    (plated false)
+    (pad (layer TCOP) (round 1.625))
+    (pad (layer INNER) (round 1.625))
+    (pad (layer BCOP) (round 1.625))
+   )
+   (padstack 10
+    (hole 3.25)
+    (plated false)
+    (pad (layer TCOP) (round 1.625))
+    (pad (layer INNER) (round 1.625))
+    (pad (layer BCOP) (round 1.625))
+   )
+   (padstack 11
+    (hole 1.6)
+    (plated true)
+    (pad (layer TCOP) (round 2.400))
+    (pad (layer INNER) (round 2.400))
+    (pad (layer BCOP) (round 2.400))
+   )
+   (padstack 12
+    (hole 1.6)
+    (plated true)
+    (pad (layer TCOP) (round 2.400))
+    (pad (layer INNER) (round 2.400))
+    (pad (layer BCOP) (round 2.400))
+   )
+   (model "DS1128-S80BP.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)
