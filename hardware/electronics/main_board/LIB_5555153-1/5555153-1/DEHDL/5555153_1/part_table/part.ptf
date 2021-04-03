@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '5555153_1'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "5555153-1" (!) = "", "55551531", "Other", "571-5555153-1", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/5555153-1?qs=BcfjnG7NVaXMLRW9dVaLuA%3D%3D", "5555153-1", "https://www.arrow.com/en/products/5555153-1/te-connectivity", "ModJack,RightAngle,8Position,Cat3 TE Connectivity Cat3 RJ45 Connector Socket, Right Angle, Through Hole", "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5555153&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=5555153-1", "12 mm"
+END_PART
+
+END.

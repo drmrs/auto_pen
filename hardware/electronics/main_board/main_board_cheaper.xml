@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/caitlin/dev/auto_pen/hardware/electronics/main_board/main_board_cheaper.sch</source>
-    <date>Wed 24 Mar 2021 06:39:31 PM PDT</date>
+    <date>Fri 02 Apr 2021 04:36:48 PM PDT</date>
     <tool>Eeschema 5.1.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -250,6 +250,7 @@
         <field name="Description">IC MTR DRVR BIPOLAR 8-60V 48TQFP</field>
         <field name="Digi-Key_PN">1460-1249-ND</field>
         <field name="Family">PMIC - Motor Drivers, Controllers</field>
+        <field name="JLCPCB">C516354</field>
         <field name="MPN">TMC5160-TA</field>
         <field name="Manufacturer">Trinamic Motion Control GmbH</field>
         <field name="Status">Active</field>
@@ -966,28 +967,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>621E7086</tstamp>
     </comp>
-    <comp ref="C2">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="JLCPCB">C1525</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62390DAA</tstamp>
-    </comp>
-    <comp ref="C1">
-      <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf</datasheet>
-      <fields>
-        <field name="JLCPCB">C15525</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62390DB1</tstamp>
-    </comp>
     <comp ref="R_TMC_1">
       <value>10kOhms</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
@@ -1021,17 +1000,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61BC3619</tstamp>
     </comp>
-    <comp ref="C_tmc_15">
-      <value>4.7uF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="JLCPCB">C29823</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62244501</tstamp>
-    </comp>
     <comp ref="GPIO_EXP_1">
       <value>Conn_01x04_Male</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
@@ -1042,17 +1010,6 @@
       <libsource lib="Connector" part="Conn_01x04_Male" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6276187A</tstamp>
-    </comp>
-    <comp ref="GPIO_EXP_2">
-      <value>Conn_01x04_Male</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="JLCPCB">C124378</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x04_Male" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6294E76B</tstamp>
     </comp>
     <comp ref="D1">
       <value>LED</value>
@@ -1097,17 +1054,6 @@
       <libsource lib="main_board_custom_sym" part="L4978D" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60357CA2</tstamp>
-    </comp>
-    <comp ref="U_48v_to_12v1">
-      <value>L4978D</value>
-      <footprint>Package_SO:SO-16_5.3x10.2mm_P1.27mm</footprint>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/1809291616_STMicroelectronics-L4978D_C93521.pdf</datasheet>
-      <fields>
-        <field name="JLCPCB">C93521</field>
-      </fields>
-      <libsource lib="main_board_custom_sym" part="L4978D" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6041FA70</tstamp>
     </comp>
     <comp ref="RESET1">
       <value>SW_Push_Dual_x2</value>
@@ -1175,10 +1121,10 @@
     </comp>
     <comp ref="J1">
       <value>RJ45</value>
-      <footprint>main_board:2158771</footprint>
+      <footprint>main_board:5555166-1</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="JLCPCB">C305919</field>
+        <field name="JLCPCB">C305991</field>
       </fields>
       <libsource lib="Connector" part="RJ45" description="RJ connector, 8P8C (8 positions 8 connected)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1459,7 +1405,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>612C2CF3</tstamp>
     </comp>
-    <comp ref="C_12v_7">
+    <comp ref="C_3.3v_7">
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
@@ -1470,7 +1416,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>615B5ED2</tstamp>
     </comp>
-    <comp ref="C_12v_9">
+    <comp ref="C_3.3v_8">
       <value>22nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
@@ -1481,7 +1427,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>615B5ED9</tstamp>
     </comp>
-    <comp ref="C_12v_10">
+    <comp ref="C_3.3v_9">
       <value>68nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
@@ -1536,7 +1482,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>619075A9</tstamp>
     </comp>
-    <comp ref="D_tmc_5">
+    <comp ref="D_12v_5">
       <value>SS210</value>
       <footprint>Diode_SMD:D_SMA</footprint>
       <datasheet>~</datasheet>
@@ -1656,6 +1602,17 @@
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>606CC0BE</tstamp>
+    </comp>
+    <comp ref="U_48v_to_12v1">
+      <value>L4978D</value>
+      <footprint>Package_SO:SO-16_5.3x10.2mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1809291616_STMicroelectronics-L4978D_C93521.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C93521</field>
+      </fields>
+      <libsource lib="main_board_custom_sym" part="L4978D" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6041FA70</tstamp>
     </comp>
   </components>
   <libparts>
@@ -2242,116 +2199,108 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Stepper_Loop_A_1">
-      <node ref="Q3" pin="5"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="Q2" pin="3"/>
-      <node ref="C_TMC_26" pin="2"/>
-      <node ref="J3" pin="1"/>
-      <node ref="R_tmc_4" pin="1"/>
-    </net>
-    <net code="2" name="Net-(U_ESP_Brain1-Pad19)">
-      <node ref="U_ESP_Brain1" pin="19"/>
-    </net>
-    <net code="3" name="Net-(U_ESP_Brain1-Pad20)">
-      <node ref="U_ESP_Brain1" pin="20"/>
-    </net>
-    <net code="4" name="Net-(U_ESP_Brain1-Pad18)">
+    <net code="1" name="Net-(U_ESP_Brain1-Pad18)">
       <node ref="U_ESP_Brain1" pin="18"/>
     </net>
-    <net code="5" name="Net-(U_ESP_Brain1-Pad17)">
-      <node ref="U_ESP_Brain1" pin="17"/>
+    <net code="2" name="Encoder_N">
+      <node ref="J3" pin="8"/>
+      <node ref="U_TRINAMIC1" pin="25"/>
     </net>
-    <net code="6" name="Net-(U_ESP_Brain1-Pad22)">
-      <node ref="U_ESP_Brain1" pin="22"/>
-    </net>
-    <net code="7" name="Net-(U_ESP_Brain1-Pad21)">
-      <node ref="U_ESP_Brain1" pin="21"/>
-    </net>
-    <net code="8" name="Encoder_A">
-      <node ref="J3" pin="5"/>
-      <node ref="U_TRINAMIC1" pin="24"/>
-    </net>
-    <net code="9" name="Reset">
-      <node ref="RESET1" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="3"/>
-      <node ref="R_RESET_1" pin="2"/>
-    </net>
-    <net code="10" name="TMC-CP-48v">
-      <node ref="R_3.3v_2" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="11"/>
-      <node ref="C_3.3v_1" pin="1"/>
-      <node ref="Q5" pin="5"/>
-      <node ref="U_48v_to_12v1" pin="11"/>
-      <node ref="C_tmc_13" pin="1"/>
-      <node ref="R_12v_5" pin="2"/>
-      <node ref="Q7" pin="5"/>
+    <net code="3" name="TMC-CP-48v">
       <node ref="J_48v_IN1" pin="2"/>
-      <node ref="C_tmc_8" pin="1"/>
-      <node ref="J3" pin="7"/>
-      <node ref="Q2" pin="5"/>
-      <node ref="C_tmc_15" pin="1"/>
-      <node ref="Q1" pin="5"/>
+      <node ref="R_3.3v_2" pin="2"/>
       <node ref="R_tmc_20" pin="2"/>
       <node ref="C_3.3v_2" pin="1"/>
       <node ref="C_12v_3" pin="1"/>
-      <node ref="C_tmc_14" pin="1"/>
+      <node ref="Q1" pin="5"/>
+      <node ref="C_3.3v_1" pin="1"/>
+      <node ref="U_48v_to_3.3v1" pin="11"/>
+      <node ref="Q2" pin="5"/>
+      <node ref="U_48v_to_12v1" pin="11"/>
+      <node ref="C_tmc_8" pin="1"/>
+      <node ref="R_12v_5" pin="2"/>
       <node ref="C_12v_1" pin="1"/>
+      <node ref="C_tmc_13" pin="1"/>
+      <node ref="Q5" pin="5"/>
+      <node ref="Q7" pin="5"/>
+      <node ref="C_tmc_14" pin="1"/>
+      <node ref="J3" pin="7"/>
     </net>
-    <net code="11" name="Encoder_N">
-      <node ref="U_TRINAMIC1" pin="25"/>
-      <node ref="J3" pin="8"/>
+    <net code="4" name="Stepper_Loop_A_2">
+      <node ref="Q1" pin="3"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C_TMC_27" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="Q4" pin="5"/>
+      <node ref="R_tmc_7" pin="1"/>
     </net>
-    <net code="12" name="Encoder_B">
-      <node ref="U_TRINAMIC1" pin="23"/>
-      <node ref="J3" pin="6"/>
+    <net code="5" name="Net-(U_ESP_Brain1-Pad19)">
+      <node ref="U_ESP_Brain1" pin="19"/>
     </net>
-    <net code="13" name="Net-(J2-Pad8)">
+    <net code="6" name="Net-(U_ESP_Brain1-Pad20)">
+      <node ref="U_ESP_Brain1" pin="20"/>
+    </net>
+    <net code="7" name="Net-(U_ESP_Brain1-Pad17)">
+      <node ref="U_ESP_Brain1" pin="17"/>
+    </net>
+    <net code="8" name="Net-(U_ESP_Brain1-Pad22)">
+      <node ref="U_ESP_Brain1" pin="22"/>
+    </net>
+    <net code="9" name="Net-(U_ESP_Brain1-Pad21)">
+      <node ref="U_ESP_Brain1" pin="21"/>
+    </net>
+    <net code="10" name="Reset">
+      <node ref="R_RESET_1" pin="2"/>
+      <node ref="U_ESP_Brain1" pin="3"/>
+      <node ref="RESET1" pin="2"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad8)">
       <node ref="J2" pin="8"/>
     </net>
-    <net code="14" name="Net-(J2-Pad1)">
+    <net code="12" name="Net-(J2-Pad1)">
       <node ref="J2" pin="1"/>
     </net>
-    <net code="15" name="TMC_Ramp">
-      <node ref="R_TMC_2" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="21"/>
+    <net code="13" name="Net-(J2-Pad9)">
+      <node ref="J2" pin="9"/>
     </net>
-    <net code="16" name="Net-(D1-Pad1)">
-      <node ref="R1" pin="2"/>
-      <node ref="D1" pin="1"/>
+    <net code="14" name="Net-(J2-PadMP4)">
+      <node ref="J2" pin="MP4"/>
     </net>
-    <net code="17" name="ESP_LED">
+    <net code="15" name="Net-(J2-PadMP3)">
+      <node ref="J2" pin="MP3"/>
+    </net>
+    <net code="16" name="Net-(J2-PadMP2)">
+      <node ref="J2" pin="MP2"/>
+    </net>
+    <net code="17" name="Net-(U_48v_to_12v1-Pad6)">
+      <node ref="U_48v_to_12v1" pin="6"/>
+    </net>
+    <net code="18" name="Net-(U_48v_to_3.3v1-Pad6)">
+      <node ref="U_48v_to_3.3v1" pin="6"/>
+    </net>
+    <net code="19" name="Net-(U_ESP_Brain1-Pad5)">
+      <node ref="U_ESP_Brain1" pin="5"/>
+    </net>
+    <net code="20" name="Net-(L12v_1-Pad1)">
+      <node ref="L12v_1" pin="1"/>
+      <node ref="L_12v_1" pin="2"/>
+    </net>
+    <net code="21" name="Net-(R_3.3_2-Pad1)">
+      <node ref="U_48v_to_3.3v1" pin="13"/>
+      <node ref="R_3.3_2" pin="1"/>
+    </net>
+    <net code="22" name="Net-(L3.3_1-Pad1)">
+      <node ref="L3.3_1" pin="1"/>
+      <node ref="L_3.3_1" pin="2"/>
+    </net>
+    <net code="23" name="ESP_LED">
       <node ref="D1" pin="2"/>
       <node ref="U_ESP_Brain1" pin="24"/>
     </net>
-    <net code="18" name="Net-(U_48v_to_12v1-Pad6)">
-      <node ref="U_48v_to_12v1" pin="6"/>
-    </net>
-    <net code="19" name="Net-(U_48v_to_3.3v1-Pad6)">
-      <node ref="U_48v_to_3.3v1" pin="6"/>
-    </net>
-    <net code="20" name="Net-(R_12v_2-Pad1)">
-      <node ref="R_12v_2" pin="1"/>
-      <node ref="U_48v_to_12v1" pin="13"/>
-    </net>
-    <net code="21" name="3.3v_comp_cap3">
-      <node ref="C_12v_7" pin="2"/>
-      <node ref="C_12v_10" pin="2"/>
-      <node ref="C_12v_9" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="3"/>
-    </net>
-    <net code="22" name="Net-(R_3.3_2-Pad1)">
-      <node ref="R_3.3_2" pin="1"/>
-      <node ref="U_48v_to_3.3v1" pin="13"/>
-    </net>
-    <net code="23" name="Net-(C_3.3v_3-Pad2)">
-      <node ref="C_3.3v_3" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="12"/>
-    </net>
-    <net code="24" name="ESP_GPIO_17">
-      <node ref="U_ESP_Brain1" pin="28"/>
-      <node ref="GPIO_EXP_1" pin="3"/>
+    <net code="24" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="1"/>
     </net>
     <net code="25" name="Net-(U_ESP_Brain1-Pad4)">
       <node ref="U_ESP_Brain1" pin="4"/>
@@ -2359,492 +2308,489 @@
     <net code="26" name="Net-(U_ESP_Brain1-Pad7)">
       <node ref="U_ESP_Brain1" pin="7"/>
     </net>
-    <net code="27" name="ESP_GPIO_33">
-      <node ref="U_ESP_Brain1" pin="9"/>
-      <node ref="GPIO_EXP_2" pin="4"/>
+    <net code="27" name="Net-(C_3.3v_3-Pad2)">
+      <node ref="C_3.3v_3" pin="2"/>
+      <node ref="U_48v_to_3.3v1" pin="12"/>
     </net>
-    <net code="28" name="Net-(Q8-Pad4)">
-      <node ref="Q8" pin="4"/>
-      <node ref="R_tmc_18" pin="2"/>
+    <net code="28" name="TMC_Ramp">
+      <node ref="U_TRINAMIC1" pin="21"/>
+      <node ref="R_TMC_2" pin="2"/>
     </net>
-    <net code="29" name="TMC_LB2">
-      <node ref="U_TRINAMIC1" pin="46"/>
-      <node ref="R_tmc_18" pin="1"/>
-    </net>
-    <net code="30" name="Stepper_Loop_B_2">
-      <node ref="J3" pin="4"/>
-      <node ref="C_TMC_29" pin="2"/>
-      <node ref="R_tmc_16" pin="1"/>
-      <node ref="Q7" pin="2"/>
-      <node ref="Q7" pin="3"/>
-      <node ref="Q8" pin="5"/>
-      <node ref="Q7" pin="1"/>
-    </net>
-    <net code="31" name="Stepper_Loop_B_1">
-      <node ref="C_TMC_28" pin="2"/>
+    <net code="29" name="Stepper_Loop_B_1">
       <node ref="R_tmc_13" pin="1"/>
-      <node ref="Q5" pin="2"/>
-      <node ref="J3" pin="3"/>
-      <node ref="Q6" pin="5"/>
       <node ref="Q5" pin="3"/>
+      <node ref="Q5" pin="2"/>
       <node ref="Q5" pin="1"/>
+      <node ref="Q6" pin="5"/>
+      <node ref="C_TMC_28" pin="2"/>
+      <node ref="J3" pin="3"/>
     </net>
-    <net code="32" name="Net-(C_tmc_12-Pad1)">
-      <node ref="Q8" pin="1"/>
-      <node ref="R_tmc_17" pin="1"/>
-      <node ref="Q8" pin="2"/>
-      <node ref="Q8" pin="3"/>
-      <node ref="Q6" pin="1"/>
-      <node ref="C_tmc_12" pin="1"/>
-      <node ref="Q6" pin="3"/>
-      <node ref="Q6" pin="2"/>
-      <node ref="R_tmc_14" pin="2"/>
+    <net code="30" name="TMC_LB2">
+      <node ref="R_tmc_18" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="46"/>
     </net>
-    <net code="33" name="TMC_SRBL">
+    <net code="31" name="TMC_BMB1">
+      <node ref="C_tmc_10" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="48"/>
+      <node ref="D_tmc_3" pin="1"/>
+      <node ref="R_tmc_13" pin="2"/>
+    </net>
+    <net code="32" name="TMC_SRBL">
       <node ref="R_tmc_15" pin="1"/>
       <node ref="U_TRINAMIC1" pin="10"/>
       <node ref="C_tmc_11" pin="2"/>
     </net>
-    <net code="34" name="TMC_CB1">
-      <node ref="C_tmc_10" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="2"/>
+    <net code="33" name="TMC_SRBH">
+      <node ref="R_tmc_14" pin="1"/>
+      <node ref="C_tmc_11" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="9"/>
     </net>
-    <net code="35" name="TMC_BMB2">
-      <node ref="R_tmc_16" pin="2"/>
-      <node ref="C_tmc_9" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="45"/>
-      <node ref="D_tmc_4" pin="1"/>
+    <net code="34" name="Net-(Q8-Pad4)">
+      <node ref="R_tmc_18" pin="2"/>
+      <node ref="Q8" pin="4"/>
     </net>
-    <net code="36" name="TMC_BMB1">
-      <node ref="C_tmc_10" pin="1"/>
-      <node ref="R_tmc_13" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="48"/>
-      <node ref="D_tmc_3" pin="1"/>
-    </net>
-    <net code="37" name="TMC_CB2">
-      <node ref="U_TRINAMIC1" pin="43"/>
-      <node ref="C_tmc_9" pin="2"/>
-    </net>
-    <net code="38" name="TMC_HB1">
+    <net code="35" name="TMC_HB1">
       <node ref="U_TRINAMIC1" pin="1"/>
       <node ref="R_tmc_11" pin="2"/>
     </net>
-    <net code="39" name="Net-(Q5-Pad4)">
-      <node ref="R_tmc_11" pin="1"/>
+    <net code="36" name="TMC_BMB2">
+      <node ref="U_TRINAMIC1" pin="45"/>
+      <node ref="D_tmc_4" pin="1"/>
+      <node ref="R_tmc_16" pin="2"/>
+      <node ref="C_tmc_9" pin="1"/>
+    </net>
+    <net code="37" name="TMC_CB2">
+      <node ref="C_tmc_9" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="43"/>
+    </net>
+    <net code="38" name="TMC_CB1">
+      <node ref="C_tmc_10" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="2"/>
+    </net>
+    <net code="39" name="Stepper_Loop_B_2">
+      <node ref="Q7" pin="1"/>
+      <node ref="Q8" pin="5"/>
+      <node ref="R_tmc_16" pin="1"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="Q7" pin="3"/>
+      <node ref="J3" pin="4"/>
+      <node ref="C_TMC_29" pin="2"/>
+    </net>
+    <net code="40" name="Net-(Q5-Pad4)">
       <node ref="Q5" pin="4"/>
+      <node ref="R_tmc_11" pin="1"/>
     </net>
-    <net code="40" name="Net-(Q6-Pad4)">
-      <node ref="R_tmc_12" pin="1"/>
-      <node ref="Q6" pin="4"/>
+    <net code="41" name="TMC_HB2">
+      <node ref="R_tmc_19" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="44"/>
     </net>
-    <net code="41" name="TMC_LB1">
-      <node ref="R_tmc_12" pin="2"/>
+    <net code="42" name="Net-(Q7-Pad4)">
+      <node ref="R_tmc_19" pin="2"/>
+      <node ref="Q7" pin="4"/>
+    </net>
+    <net code="43" name="TMC_LB1">
       <node ref="U_TRINAMIC1" pin="47"/>
+      <node ref="R_tmc_12" pin="2"/>
     </net>
-    <net code="42" name="HSPI_CS">
-      <node ref="J2" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="23"/>
+    <net code="44" name="Net-(Q6-Pad4)">
+      <node ref="Q6" pin="4"/>
+      <node ref="R_tmc_12" pin="1"/>
     </net>
-    <net code="43" name="Net-(U_TRINAMIC1-Pad27)">
+    <net code="45" name="Net-(U_TRINAMIC1-Pad27)">
       <node ref="U_TRINAMIC1" pin="27"/>
     </net>
-    <net code="44" name="Net-(U_TRINAMIC1-Pad26)">
+    <net code="46" name="Net-(U_TRINAMIC1-Pad26)">
       <node ref="U_TRINAMIC1" pin="26"/>
     </net>
-    <net code="45" name="Net-(U_TRINAMIC1-Pad18)">
+    <net code="47" name="Net-(U_TRINAMIC1-Pad18)">
       <node ref="U_TRINAMIC1" pin="18"/>
     </net>
-    <net code="46" name="Net-(U_TRINAMIC1-Pad17)">
+    <net code="48" name="Net-(U_TRINAMIC1-Pad17)">
       <node ref="U_TRINAMIC1" pin="17"/>
     </net>
-    <net code="47" name="Net-(J2-PadMP3)">
-      <node ref="J2" pin="MP3"/>
-    </net>
-    <net code="48" name="Net-(J2-Pad9)">
-      <node ref="J2" pin="9"/>
-    </net>
-    <net code="49" name="Net-(J2-PadMP4)">
-      <node ref="J2" pin="MP4"/>
-    </net>
-    <net code="50" name="Net-(J2-PadMP2)">
-      <node ref="J2" pin="MP2"/>
-    </net>
-    <net code="51" name="HSPI_MISO">
+    <net code="49" name="HSPI_MISO">
       <node ref="J2" pin="7"/>
       <node ref="U_ESP_Brain1" pin="14"/>
     </net>
-    <net code="52" name="HSPI_CLK">
+    <net code="50" name="HSPI_CLK">
       <node ref="J2" pin="5"/>
       <node ref="U_ESP_Brain1" pin="13"/>
     </net>
-    <net code="53" name="HSPI_MOSI">
+    <net code="51" name="HSPI_MOSI">
       <node ref="J2" pin="3"/>
       <node ref="U_ESP_Brain1" pin="16"/>
     </net>
-    <net code="54" name="TMC_SRBH">
-      <node ref="U_TRINAMIC1" pin="9"/>
-      <node ref="C_tmc_11" pin="1"/>
-      <node ref="R_tmc_14" pin="1"/>
+    <net code="52" name="HSPI_CS">
+      <node ref="U_ESP_Brain1" pin="23"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="53" name="Net-(C_tmc_12-Pad1)">
+      <node ref="C_tmc_12" pin="1"/>
+      <node ref="Q6" pin="1"/>
+      <node ref="R_tmc_14" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="Q8" pin="1"/>
+      <node ref="R_tmc_17" pin="1"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="Q8" pin="2"/>
+    </net>
+    <net code="54" name="3.3v_comp_cap3">
+      <node ref="U_48v_to_3.3v1" pin="3"/>
+      <node ref="C_3.3v_7" pin="2"/>
+      <node ref="C_3.3v_8" pin="2"/>
+      <node ref="C_3.3v_9" pin="2"/>
     </net>
     <net code="55" name="12v_comp_cap3">
+      <node ref="C_12v_6" pin="2"/>
       <node ref="C_12v_5" pin="2"/>
       <node ref="U_48v_to_12v1" pin="3"/>
       <node ref="C_12v_8" pin="2"/>
-      <node ref="C_12v_6" pin="2"/>
     </net>
-    <net code="56" name="Net-(C_12v_4-Pad2)">
-      <node ref="U_48v_to_12v1" pin="12"/>
+    <net code="56" name="12v_comp_cap2">
+      <node ref="U_ESP_Brain1" pin="1"/>
+      <node ref="C_3.3v_1" pin="2"/>
+      <node ref="PHeader1" pin="1"/>
+      <node ref="C_12v_2" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J1" pin="5"/>
+      <node ref="POWER_EXP_1" pin="3"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U_TRINAMIC1" pin="19"/>
+      <node ref="U_TRINAMIC1" pin="12"/>
+      <node ref="C_esp_2" pin="2"/>
+      <node ref="C_esp_1" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="11"/>
+      <node ref="C_tmc_12" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="30"/>
+      <node ref="C_tmc_7" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="49"/>
+      <node ref="C_tmc_16" pin="2"/>
+      <node ref="C_3.3v_5" pin="1"/>
+      <node ref="C_3.3v_6" pin="1"/>
+      <node ref="C_3.3v_4" pin="1"/>
+      <node ref="C_3.3_2" pin="2"/>
+      <node ref="POWER_EXP_1" pin="1"/>
+      <node ref="U_ESP_Brain1" pin="38"/>
+      <node ref="C_3.3_4" pin="2"/>
+      <node ref="C_tmc_1" pin="2"/>
+      <node ref="C_tmc_2" pin="1"/>
+      <node ref="C_tmc_3" pin="1"/>
+      <node ref="J_48v_IN1" pin="1"/>
+      <node ref="U_ESP_Brain1" pin="15"/>
+      <node ref="U_TRINAMIC1" pin="6"/>
+      <node ref="C_12v_3" pin="2"/>
+      <node ref="R_12v_4" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C_3.3v_2" pin="2"/>
+      <node ref="U_ESP_Brain1" pin="39"/>
+      <node ref="C_TMC_14" pin="2"/>
+      <node ref="C_12_4" pin="2"/>
+      <node ref="C12v_5" pin="1"/>
+      <node ref="C_TMC_28" pin="1"/>
+      <node ref="R_tmc_8" pin="2"/>
+      <node ref="R_tmc_6" pin="2"/>
+      <node ref="D_tmc_1" pin="2"/>
+      <node ref="U_48v_to_12v1" pin="2"/>
+      <node ref="C_12v_11" pin="1"/>
+      <node ref="C_12v_5" pin="1"/>
+      <node ref="C_12v_6" pin="1"/>
+      <node ref="C_12v_8" pin="1"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J2" pin="MP1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R_tmc_17" pin="2"/>
+      <node ref="C_TMC_27" pin="1"/>
+      <node ref="C_TMC_26" pin="1"/>
+      <node ref="C_TMC_29" pin="1"/>
+      <node ref="C_tmc_13" pin="2"/>
+      <node ref="D_tmc_2" pin="2"/>
+      <node ref="C_3.3v_7" pin="1"/>
+      <node ref="C_3.3v_8" pin="1"/>
+      <node ref="C_3.3v_9" pin="1"/>
+      <node ref="R_tmc_15" pin="2"/>
+      <node ref="D_12v_5" pin="2"/>
+      <node ref="C_tmc_8" pin="2"/>
+      <node ref="D_3.3v_1" pin="2"/>
+      <node ref="D_tmc_3" pin="2"/>
+      <node ref="D_tmc_4" pin="2"/>
+      <node ref="C12v_4" pin="1"/>
+      <node ref="C12v_1" pin="1"/>
+      <node ref="C12v_2" pin="1"/>
+      <node ref="C12v_3" pin="1"/>
+      <node ref="D_esp_2" pin="2"/>
+      <node ref="D_esp_1" pin="2"/>
+      <node ref="R_TMC_2" pin="1"/>
+      <node ref="C_tmc_14" pin="2"/>
+      <node ref="R_TMC_1" pin="1"/>
+      <node ref="RESET1" pin="1"/>
+      <node ref="PROG1" pin="1"/>
+      <node ref="U_48v_to_3.3v1" pin="2"/>
+      <node ref="C_12v_1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="57" name="Net-(C_12v_4-Pad2)">
       <node ref="C_12v_4" pin="2"/>
+      <node ref="U_48v_to_12v1" pin="12"/>
     </net>
-    <net code="57" name="Net-(C_3.3v_3-Pad1)">
-      <node ref="C_3.3v_3" pin="1"/>
-      <node ref="L3.3_1" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="5"/>
-      <node ref="D_3.3v_1" pin="1"/>
+    <net code="58" name="Net-(U_ESP_Brain1-Pad9)">
+      <node ref="U_ESP_Brain1" pin="9"/>
     </net>
-    <net code="58" name="Net-(C_3.3_2-Pad1)">
+    <net code="59" name="Net-(U_ESP_Brain1-Pad8)">
+      <node ref="U_ESP_Brain1" pin="8"/>
+    </net>
+    <net code="60" name="Net-(U_ESP_Brain1-Pad12)">
+      <node ref="U_ESP_Brain1" pin="12"/>
+    </net>
+    <net code="61" name="Net-(U_ESP_Brain1-Pad11)">
+      <node ref="U_ESP_Brain1" pin="11"/>
+    </net>
+    <net code="62" name="Net-(R_12v_1-Pad1)">
+      <node ref="R_12v_1" pin="1"/>
+      <node ref="R_12v_5" pin="1"/>
+    </net>
+    <net code="63" name="Net-(C_3.3_2-Pad1)">
       <node ref="U_48v_to_3.3v1" pin="4"/>
       <node ref="R_3.3v_1" pin="2"/>
       <node ref="C_3.3_2" pin="1"/>
     </net>
-    <net code="59" name="Net-(R_3.3v_1-Pad1)">
+    <net code="64" name="Net-(C_12v_2-Pad1)">
+      <node ref="R_12v_1" pin="2"/>
+      <node ref="U_48v_to_12v1" pin="4"/>
+      <node ref="C_12v_2" pin="1"/>
+    </net>
+    <net code="65" name="Net-(R_3.3v_1-Pad1)">
       <node ref="R_3.3v_2" pin="1"/>
       <node ref="R_3.3v_1" pin="1"/>
     </net>
-    <net code="60" name="Net-(C_12v_2-Pad1)">
-      <node ref="U_48v_to_12v1" pin="4"/>
-      <node ref="C_12v_2" pin="1"/>
-      <node ref="R_12v_1" pin="2"/>
+    <net code="66" name="ESP_I2C_SDA">
+      <node ref="R_esp_1" pin="1"/>
+      <node ref="C_esp_1" pin="2"/>
+      <node ref="U_ESP_Brain1" pin="33"/>
+      <node ref="U1" pin="1"/>
     </net>
-    <net code="61" name="Net-(R_12v_1-Pad1)">
-      <node ref="R_12v_5" pin="1"/>
-      <node ref="R_12v_1" pin="1"/>
-    </net>
-    <net code="62" name="12v_comp_cap2">
-      <node ref="R_12v_4" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="19"/>
-      <node ref="U_TRINAMIC1" pin="11"/>
-      <node ref="U_TRINAMIC1" pin="12"/>
-      <node ref="R_tmc_6" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="49"/>
-      <node ref="U_TRINAMIC1" pin="6"/>
-      <node ref="J_48v_IN1" pin="1"/>
-      <node ref="C_tmc_8" pin="2"/>
-      <node ref="C_3.3v_6" pin="2"/>
-      <node ref="C_TMC_14" pin="2"/>
-      <node ref="C_tmc_12" pin="2"/>
-      <node ref="C_tmc_7" pin="2"/>
-      <node ref="C_tmc_16" pin="1"/>
-      <node ref="C_tmc_16" pin="2"/>
-      <node ref="C_3.3v_5" pin="1"/>
-      <node ref="C_3.3v_5" pin="2"/>
-      <node ref="C_3.3v_6" pin="1"/>
-      <node ref="C_esp_2" pin="2"/>
-      <node ref="C_3.3v_2" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="1"/>
-      <node ref="R_PROG_1" pin="1"/>
-      <node ref="C_tmc_1" pin="2"/>
-      <node ref="C_tmc_2" pin="1"/>
-      <node ref="C_tmc_3" pin="1"/>
-      <node ref="C_esp_1" pin="1"/>
-      <node ref="C_TMC_26" pin="1"/>
-      <node ref="U_ESP_Brain1" pin="2"/>
-      <node ref="C_3.3_4" pin="2"/>
-      <node ref="C_12v_2" pin="2"/>
-      <node ref="C_12v_1" pin="2"/>
-      <node ref="C_12_4" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="39"/>
-      <node ref="C_TMC_27" pin="1"/>
-      <node ref="U_ESP_Brain1" pin="38"/>
-      <node ref="R_tmc_8" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="15"/>
-      <node ref="U_TRINAMIC1" pin="30"/>
-      <node ref="D_tmc_1" pin="2"/>
-      <node ref="C_3.3_2" pin="2"/>
-      <node ref="C4" pin="1"/>
-      <node ref="C4" pin="2"/>
-      <node ref="PHeader1" pin="1"/>
-      <node ref="PHeader1" pin="4"/>
-      <node ref="C_3.3v_1" pin="2"/>
-      <node ref="C_tmc_14" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="20"/>
-      <node ref="C_tmc_13" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="22"/>
-      <node ref="C_3.3v_4" pin="2"/>
-      <node ref="C_12v_7" pin="1"/>
-      <node ref="C_12v_8" pin="1"/>
-      <node ref="C_12v_6" pin="1"/>
-      <node ref="C_12v_5" pin="1"/>
-      <node ref="C_12v_11" pin="1"/>
-      <node ref="C12v_5" pin="1"/>
-      <node ref="C_12v_10" pin="1"/>
-      <node ref="C12v_1" pin="1"/>
-      <node ref="D_tmc_3" pin="2"/>
-      <node ref="D_tmc_5" pin="2"/>
-      <node ref="D_3.3v_1" pin="2"/>
-      <node ref="C_3.3v_4" pin="1"/>
-      <node ref="D_tmc_4" pin="2"/>
-      <node ref="D_tmc_2" pin="2"/>
-      <node ref="C12v_3" pin="1"/>
-      <node ref="C_12v_9" pin="1"/>
-      <node ref="C12v_2" pin="1"/>
-      <node ref="C12v_4" pin="1"/>
-      <node ref="D_esp_2" pin="2"/>
-      <node ref="D_esp_1" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="R_TMC_1" pin="1"/>
-      <node ref="R_TMC_2" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U_48v_to_12v1" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="2"/>
-      <node ref="U_48v_to_3.3v1" pin="14"/>
-      <node ref="R_RESET_1" pin="1"/>
-      <node ref="C_tmc_15" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="J2" pin="MP1"/>
-      <node ref="J2" pin="6"/>
-      <node ref="J2" pin="4"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C3" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="R_tmc_17" pin="2"/>
-      <node ref="R_tmc_15" pin="2"/>
-      <node ref="C_TMC_28" pin="1"/>
-      <node ref="C_TMC_29" pin="1"/>
-      <node ref="J1" pin="5"/>
-      <node ref="J1" pin="3"/>
-      <node ref="C_12v_3" pin="2"/>
-      <node ref="POWER_EXP_1" pin="4"/>
-      <node ref="POWER_EXP_1" pin="3"/>
-      <node ref="POWER_EXP_1" pin="1"/>
-      <node ref="L_3.3_1" pin="1"/>
-      <node ref="RESET1" pin="1"/>
-      <node ref="PROG1" pin="1"/>
-      <node ref="R_esp_1" pin="2"/>
-      <node ref="U1" pin="4"/>
-      <node ref="R_esp_2" pin="1"/>
-    </net>
-    <net code="63" name="Net-(D_esp_1-Pad1)">
-      <node ref="U1" pin="6"/>
-      <node ref="J1" pin="8"/>
-      <node ref="U1" pin="5"/>
-      <node ref="D_esp_1" pin="1"/>
-      <node ref="R_esp_4" pin="2"/>
-    </net>
-    <net code="64" name="Net-(D_esp_2-Pad1)">
-      <node ref="U1" pin="3"/>
+    <net code="67" name="Net-(D_esp_2-Pad1)">
       <node ref="D_esp_2" pin="1"/>
-      <node ref="J1" pin="1"/>
-      <node ref="U1" pin="2"/>
       <node ref="R_esp_3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="65" name="Net-(L12v_1-Pad1)">
-      <node ref="L_12v_1" pin="2"/>
-      <node ref="L12v_1" pin="1"/>
+    <net code="68" name="Net-(D_esp_1-Pad1)">
+      <node ref="D_esp_1" pin="1"/>
+      <node ref="J1" pin="8"/>
+      <node ref="R_esp_4" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="6"/>
     </net>
-    <net code="66" name="Net-(L3.3_1-Pad1)">
-      <node ref="L3.3_1" pin="1"/>
-      <node ref="L_3.3_1" pin="2"/>
-    </net>
-    <net code="67" name="Net-(U_ESP_Brain1-Pad5)">
-      <node ref="U_ESP_Brain1" pin="5"/>
-    </net>
-    <net code="68" name="Net-(J1-Pad7)">
-      <node ref="J1" pin="7"/>
-    </net>
-    <net code="69" name="Net-(J1-Pad2)">
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="70" name="Net-(C_12v_4-Pad1)">
-      <node ref="D_tmc_5" pin="1"/>
-      <node ref="C_12v_4" pin="1"/>
-      <node ref="U_48v_to_12v1" pin="5"/>
-      <node ref="L12v_1" pin="2"/>
-    </net>
-    <net code="72" name="TMC_HB2">
-      <node ref="U_TRINAMIC1" pin="44"/>
-      <node ref="R_tmc_19" pin="1"/>
-    </net>
-    <net code="73" name="TMC_5VOUT">
-      <node ref="C_tmc_2" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="5"/>
-      <node ref="R_tmc_1" pin="1"/>
-    </net>
-    <net code="74" name="Net-(R_12v_3-Pad2)">
-      <node ref="U_48v_to_12v1" pin="14"/>
-      <node ref="R_12v_4" pin="1"/>
-      <node ref="R_12v_3" pin="2"/>
-    </net>
-    <net code="75" name="TMC_CA1">
-      <node ref="C_tmc_5" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="42"/>
-    </net>
-    <net code="76" name="TMC_LA1">
-      <node ref="R_tmc_3" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="39"/>
-    </net>
-    <net code="77" name="TMC_LA2">
-      <node ref="R_tmc_9" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="38"/>
-    </net>
-    <net code="78" name="TNC_VCP">
-      <node ref="U_TRINAMIC1" pin="34"/>
-      <node ref="C_TMC_11" pin="1"/>
-    </net>
-    <net code="79" name="VSPI_MOSI">
-      <node ref="U_TRINAMIC1" pin="15"/>
-      <node ref="U_ESP_Brain1" pin="37"/>
-    </net>
-    <net code="80" name="VSPI_CLK">
-      <node ref="U_ESP_Brain1" pin="30"/>
-      <node ref="U_TRINAMIC1" pin="14"/>
-    </net>
-    <net code="81" name="VSPI_CS">
-      <node ref="U_ESP_Brain1" pin="29"/>
-      <node ref="U_TRINAMIC1" pin="13"/>
-    </net>
-    <net code="82" name="TMC_HA2">
-      <node ref="R_tmc_10" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="36"/>
-    </net>
-    <net code="83" name="TMC_VS">
-      <node ref="U_TRINAMIC1" pin="33"/>
-      <node ref="C_TMC_11" pin="2"/>
-      <node ref="C_TMC_14" pin="1"/>
-      <node ref="R_tmc_20" pin="1"/>
-    </net>
-    <net code="84" name="TMC_CPI">
-      <node ref="C_TMC_10" pin="1"/>
-      <node ref="C_TMC_2" pin="1"/>
-      <node ref="C_TMC_5" pin="1"/>
-      <node ref="C_TMC_6" pin="1"/>
-      <node ref="C_TMC_7" pin="1"/>
-      <node ref="C_TMC_8" pin="1"/>
-      <node ref="C_TMC_9" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="32"/>
-      <node ref="C_TMC_3" pin="1"/>
-      <node ref="C_TMC_22" pin="1"/>
-      <node ref="C_TMC_16" pin="1"/>
-      <node ref="C_TMC_17" pin="1"/>
-      <node ref="C_TMC_21" pin="1"/>
-      <node ref="C_TMC_18" pin="1"/>
-      <node ref="C_TMC_23" pin="1"/>
-      <node ref="C_TMC_25" pin="1"/>
-      <node ref="C_TMC_24" pin="1"/>
-      <node ref="C_TMC_20" pin="1"/>
-      <node ref="C_TMC_19" pin="1"/>
-      <node ref="C_TMC_12" pin="1"/>
-      <node ref="C_TMC_15" pin="1"/>
-      <node ref="C_TMC_1" pin="1"/>
-      <node ref="C_TMC_13" pin="1"/>
-    </net>
-    <net code="85" name="TMC_CPO">
-      <node ref="C_TMC_17" pin="2"/>
-      <node ref="C_TMC_18" pin="2"/>
-      <node ref="C_TMC_15" pin="2"/>
-      <node ref="C_TMC_13" pin="2"/>
-      <node ref="C_TMC_25" pin="2"/>
-      <node ref="C_TMC_22" pin="2"/>
-      <node ref="C_TMC_10" pin="2"/>
-      <node ref="C_TMC_16" pin="2"/>
-      <node ref="C_TMC_12" pin="2"/>
-      <node ref="C_TMC_21" pin="2"/>
-      <node ref="C_TMC_24" pin="2"/>
-      <node ref="C_TMC_20" pin="2"/>
-      <node ref="C_TMC_23" pin="2"/>
-      <node ref="C_TMC_19" pin="2"/>
-      <node ref="C_TMC_2" pin="2"/>
-      <node ref="C_TMC_1" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="31"/>
-      <node ref="C_TMC_3" pin="2"/>
-      <node ref="C_TMC_9" pin="2"/>
-      <node ref="C_TMC_8" pin="2"/>
-      <node ref="C_TMC_6" pin="2"/>
-      <node ref="C_TMC_7" pin="2"/>
-      <node ref="C_TMC_5" pin="2"/>
-    </net>
-    <net code="86" name="12v_comp_cap1">
-      <node ref="R_12v_3" pin="1"/>
-      <node ref="L_12v_1" pin="1"/>
-      <node ref="C12v_5" pin="2"/>
-      <node ref="C_12v_11" pin="2"/>
-      <node ref="J1" pin="6"/>
-      <node ref="C_tmc_1" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="4"/>
-      <node ref="U_TRINAMIC1" pin="3"/>
-      <node ref="POWER_EXP_1" pin="2"/>
-      <node ref="C12v_1" pin="2"/>
-      <node ref="C12v_2" pin="2"/>
-      <node ref="C12v_4" pin="2"/>
-      <node ref="C12v_3" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="R_esp_4" pin="1"/>
-      <node ref="R_esp_3" pin="2"/>
-    </net>
-    <net code="87" name="TMC_VCC">
-      <node ref="U_TRINAMIC1" pin="29"/>
-      <node ref="R_tmc_1" pin="2"/>
-      <node ref="C_tmc_3" pin="2"/>
-    </net>
-    <net code="88" name="RX_Program">
-      <node ref="PHeader1" pin="3"/>
-      <node ref="U_ESP_Brain1" pin="34"/>
-    </net>
-    <net code="89" name="TX_Program">
-      <node ref="U_ESP_Brain1" pin="35"/>
-      <node ref="PHeader1" pin="2"/>
-    </net>
-    <net code="90" name="Net-(C_3.3_4-Pad1)">
-      <node ref="R_3.3_2" pin="2"/>
-      <node ref="C_3.3_4" pin="1"/>
-    </net>
-    <net code="91" name="ESP_GPIO_16">
-      <node ref="U_ESP_Brain1" pin="27"/>
-      <node ref="GPIO_EXP_1" pin="2"/>
-    </net>
-    <net code="92" name="ESP_GPIO_4">
-      <node ref="GPIO_EXP_1" pin="1"/>
-      <node ref="U_ESP_Brain1" pin="26"/>
-    </net>
-    <net code="93" name="Program">
-      <node ref="U_ESP_Brain1" pin="25"/>
-      <node ref="PROG1" pin="2"/>
-      <node ref="R_PROG_1" pin="2"/>
-    </net>
-    <net code="94" name="ESP_GPIO_27">
-      <node ref="U_ESP_Brain1" pin="12"/>
-      <node ref="GPIO_EXP_2" pin="2"/>
-    </net>
-    <net code="95" name="ESP_GPIO_26">
-      <node ref="U_ESP_Brain1" pin="11"/>
-      <node ref="GPIO_EXP_2" pin="1"/>
-    </net>
-    <net code="96" name="ESP_GPIO_25">
-      <node ref="U_ESP_Brain1" pin="10"/>
-      <node ref="GPIO_EXP_1" pin="4"/>
-    </net>
-    <net code="97" name="ESP_GPIO_32">
-      <node ref="GPIO_EXP_2" pin="3"/>
-      <node ref="U_ESP_Brain1" pin="8"/>
-    </net>
-    <net code="98" name="ESP_Emergency">
-      <node ref="U_TRINAMIC1" pin="28"/>
-      <node ref="R_TMC_1" pin="2"/>
-      <node ref="J1" pin="4"/>
-      <node ref="U_ESP_Brain1" pin="6"/>
-    </net>
-    <net code="99" name="ESP_I2C_SCL">
+    <net code="69" name="ESP_I2C_SCL">
       <node ref="U1" pin="7"/>
       <node ref="R_esp_2" pin="2"/>
       <node ref="C_esp_2" pin="1"/>
       <node ref="U_ESP_Brain1" pin="36"/>
     </net>
-    <net code="100" name="ESP_I2C_SDA">
-      <node ref="U1" pin="1"/>
-      <node ref="C_esp_1" pin="2"/>
-      <node ref="U_ESP_Brain1" pin="33"/>
-      <node ref="R_esp_1" pin="1"/>
+    <net code="70" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="71" name="3.3_comp_cap1">
+      <node ref="U_TRINAMIC1" pin="20"/>
+      <node ref="U_TRINAMIC1" pin="22"/>
+      <node ref="PHeader1" pin="4"/>
+      <node ref="R_RESET_1" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U_ESP_Brain1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U_48v_to_3.3v1" pin="14"/>
+      <node ref="J2" pin="4"/>
+      <node ref="R_PROG_1" pin="1"/>
+      <node ref="L_3.3_1" pin="1"/>
+      <node ref="R_esp_1" pin="2"/>
+      <node ref="J1" pin="7"/>
+      <node ref="R_esp_2" pin="1"/>
+      <node ref="POWER_EXP_1" pin="4"/>
+      <node ref="C_3.3v_5" pin="2"/>
+      <node ref="C_3.3v_4" pin="2"/>
+      <node ref="C_3.3v_6" pin="2"/>
+      <node ref="C_tmc_16" pin="1"/>
+    </net>
+    <net code="73" name="Net-(R_12v_3-Pad2)">
+      <node ref="U_48v_to_12v1" pin="14"/>
+      <node ref="R_12v_4" pin="1"/>
+      <node ref="R_12v_3" pin="2"/>
+    </net>
+    <net code="74" name="Net-(Q1-Pad4)">
+      <node ref="R_tmc_10" pin="2"/>
+      <node ref="Q1" pin="4"/>
+    </net>
+    <net code="75" name="TMC_SRAH">
+      <node ref="C_tmc_6" pin="1"/>
+      <node ref="R_tmc_5" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="8"/>
+    </net>
+    <net code="76" name="TMC_5VOUT">
+      <node ref="R_tmc_1" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="5"/>
+      <node ref="C_tmc_2" pin="2"/>
+    </net>
+    <net code="77" name="TMC_CA1">
+      <node ref="U_TRINAMIC1" pin="42"/>
+      <node ref="C_tmc_5" pin="2"/>
+    </net>
+    <net code="78" name="TMC_LA1">
+      <node ref="U_TRINAMIC1" pin="39"/>
+      <node ref="R_tmc_3" pin="2"/>
+    </net>
+    <net code="79" name="TNC_VCP">
+      <node ref="U_TRINAMIC1" pin="34"/>
+      <node ref="C_TMC_11" pin="1"/>
+    </net>
+    <net code="80" name="VSPI_MOSI">
+      <node ref="U_TRINAMIC1" pin="15"/>
+      <node ref="U_ESP_Brain1" pin="37"/>
+    </net>
+    <net code="81" name="12v_comp_cap1">
+      <node ref="L_12v_1" pin="1"/>
+      <node ref="R_esp_3" pin="2"/>
+      <node ref="R_esp_4" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="3"/>
+      <node ref="POWER_EXP_1" pin="2"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U1" pin="8"/>
+      <node ref="C_12v_11" pin="2"/>
+      <node ref="R_12v_3" pin="1"/>
+      <node ref="C12v_1" pin="2"/>
+      <node ref="C12v_4" pin="2"/>
+      <node ref="C12v_3" pin="2"/>
+      <node ref="C12v_2" pin="2"/>
+      <node ref="C12v_5" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="4"/>
+      <node ref="C_tmc_1" pin="1"/>
+    </net>
+    <net code="82" name="TMC_LA2">
+      <node ref="R_tmc_9" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="38"/>
+    </net>
+    <net code="83" name="TMC_HA2">
+      <node ref="R_tmc_10" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="36"/>
+    </net>
+    <net code="84" name="TMC_VS">
+      <node ref="C_TMC_11" pin="2"/>
+      <node ref="C_TMC_14" pin="1"/>
+      <node ref="R_tmc_20" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="33"/>
+    </net>
+    <net code="85" name="TMC_CPI">
+      <node ref="C_TMC_22" pin="1"/>
+      <node ref="C_TMC_21" pin="1"/>
+      <node ref="C_TMC_1" pin="1"/>
+      <node ref="C_TMC_17" pin="1"/>
+      <node ref="C_TMC_19" pin="1"/>
+      <node ref="C_TMC_16" pin="1"/>
+      <node ref="C_TMC_15" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="32"/>
+      <node ref="C_TMC_2" pin="1"/>
+      <node ref="C_TMC_18" pin="1"/>
+      <node ref="C_TMC_3" pin="1"/>
+      <node ref="C_TMC_5" pin="1"/>
+      <node ref="C_TMC_20" pin="1"/>
+      <node ref="C_TMC_13" pin="1"/>
+      <node ref="C_TMC_6" pin="1"/>
+      <node ref="C_TMC_7" pin="1"/>
+      <node ref="C_TMC_12" pin="1"/>
+      <node ref="C_TMC_8" pin="1"/>
+      <node ref="C_TMC_9" pin="1"/>
+      <node ref="C_TMC_25" pin="1"/>
+      <node ref="C_TMC_24" pin="1"/>
+      <node ref="C_TMC_10" pin="1"/>
+      <node ref="C_TMC_23" pin="1"/>
+    </net>
+    <net code="86" name="TMC_CPO">
+      <node ref="C_TMC_10" pin="2"/>
+      <node ref="C_TMC_21" pin="2"/>
+      <node ref="C_TMC_20" pin="2"/>
+      <node ref="C_TMC_12" pin="2"/>
+      <node ref="C_TMC_19" pin="2"/>
+      <node ref="C_TMC_18" pin="2"/>
+      <node ref="C_TMC_13" pin="2"/>
+      <node ref="C_TMC_17" pin="2"/>
+      <node ref="C_TMC_22" pin="2"/>
+      <node ref="C_TMC_16" pin="2"/>
+      <node ref="C_TMC_15" pin="2"/>
+      <node ref="C_TMC_23" pin="2"/>
+      <node ref="C_TMC_24" pin="2"/>
+      <node ref="C_TMC_25" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="31"/>
+      <node ref="C_TMC_2" pin="2"/>
+      <node ref="C_TMC_5" pin="2"/>
+      <node ref="C_TMC_6" pin="2"/>
+      <node ref="C_TMC_7" pin="2"/>
+      <node ref="C_TMC_8" pin="2"/>
+      <node ref="C_TMC_9" pin="2"/>
+      <node ref="C_TMC_3" pin="2"/>
+      <node ref="C_TMC_1" pin="2"/>
+    </net>
+    <net code="87" name="TMC_VCC">
+      <node ref="R_tmc_1" pin="2"/>
+      <node ref="C_tmc_3" pin="2"/>
+      <node ref="U_TRINAMIC1" pin="29"/>
+    </net>
+    <net code="88" name="ESP_Emergency">
+      <node ref="J1" pin="4"/>
+      <node ref="U_ESP_Brain1" pin="6"/>
+      <node ref="U_TRINAMIC1" pin="28"/>
+      <node ref="R_TMC_1" pin="2"/>
+    </net>
+    <net code="89" name="Encoder_A">
+      <node ref="J3" pin="5"/>
+      <node ref="U_TRINAMIC1" pin="24"/>
+    </net>
+    <net code="90" name="Encoder_B">
+      <node ref="U_TRINAMIC1" pin="23"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="91" name="RX_Program">
+      <node ref="PHeader1" pin="3"/>
+      <node ref="U_ESP_Brain1" pin="34"/>
+    </net>
+    <net code="92" name="TX_Program">
+      <node ref="U_ESP_Brain1" pin="35"/>
+      <node ref="PHeader1" pin="2"/>
+    </net>
+    <net code="93" name="Net-(C_3.3_4-Pad1)">
+      <node ref="R_3.3_2" pin="2"/>
+      <node ref="C_3.3_4" pin="1"/>
+    </net>
+    <net code="94" name="Net-(C_3.3v_3-Pad1)">
+      <node ref="L3.3_1" pin="2"/>
+      <node ref="U_48v_to_3.3v1" pin="5"/>
+      <node ref="C_3.3v_3" pin="1"/>
+      <node ref="D_3.3v_1" pin="1"/>
+    </net>
+    <net code="95" name="ESP_GPIO_17">
+      <node ref="U_ESP_Brain1" pin="28"/>
+      <node ref="GPIO_EXP_1" pin="3"/>
+    </net>
+    <net code="96" name="ESP_GPIO_16">
+      <node ref="U_ESP_Brain1" pin="27"/>
+      <node ref="GPIO_EXP_1" pin="2"/>
+    </net>
+    <net code="97" name="ESP_GPIO_4">
+      <node ref="U_ESP_Brain1" pin="26"/>
+      <node ref="GPIO_EXP_1" pin="1"/>
+    </net>
+    <net code="98" name="Program">
+      <node ref="PROG1" pin="2"/>
+      <node ref="U_ESP_Brain1" pin="25"/>
+      <node ref="R_PROG_1" pin="2"/>
+    </net>
+    <net code="99" name="VSPI_CS">
+      <node ref="U_ESP_Brain1" pin="29"/>
+      <node ref="U_TRINAMIC1" pin="13"/>
+    </net>
+    <net code="100" name="ESP_GPIO_25">
+      <node ref="U_ESP_Brain1" pin="10"/>
+      <node ref="GPIO_EXP_1" pin="4"/>
     </net>
     <net code="101" name="Net-(U_ESP_Brain1-Pad32)">
       <node ref="U_ESP_Brain1" pin="32"/>
@@ -2853,79 +2799,80 @@
       <node ref="U_ESP_Brain1" pin="31"/>
       <node ref="U_TRINAMIC1" pin="16"/>
     </net>
-    <net code="103" name="Net-(C_12_4-Pad1)">
-      <node ref="R_12v_2" pin="2"/>
+    <net code="103" name="VSPI_CLK">
+      <node ref="U_TRINAMIC1" pin="14"/>
+      <node ref="U_ESP_Brain1" pin="30"/>
+    </net>
+    <net code="104" name="Net-(R_12v_2-Pad1)">
+      <node ref="U_48v_to_12v1" pin="13"/>
+      <node ref="R_12v_2" pin="1"/>
+    </net>
+    <net code="105" name="Net-(C_12v_4-Pad1)">
+      <node ref="D_12v_5" pin="1"/>
+      <node ref="L12v_1" pin="2"/>
+      <node ref="C_12v_4" pin="1"/>
+      <node ref="U_48v_to_12v1" pin="5"/>
+    </net>
+    <net code="106" name="Net-(C_12_4-Pad1)">
       <node ref="C_12_4" pin="1"/>
+      <node ref="R_12v_2" pin="2"/>
     </net>
-    <net code="104" name="Net-(Q4-Pad4)">
-      <node ref="R_tmc_9" pin="2"/>
+    <net code="107" name="Net-(Q4-Pad4)">
       <node ref="Q4" pin="4"/>
+      <node ref="R_tmc_9" pin="2"/>
     </net>
-    <net code="105" name="TMC_SRAL">
-      <node ref="U_TRINAMIC1" pin="7"/>
-      <node ref="C_tmc_6" pin="2"/>
-      <node ref="R_tmc_6" pin="1"/>
+    <net code="108" name="Net-(C_tmc_7-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="R_tmc_5" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="R_tmc_8" pin="1"/>
+      <node ref="C_tmc_7" pin="1"/>
     </net>
-    <net code="106" name="Stepper_Loop_A_2">
-      <node ref="Q1" pin="1"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="Q4" pin="5"/>
-      <node ref="J3" pin="2"/>
-      <node ref="C_TMC_27" pin="2"/>
-      <node ref="R_tmc_7" pin="1"/>
-    </net>
-    <net code="107" name="TMC_BMA2">
-      <node ref="R_tmc_7" pin="2"/>
+    <net code="109" name="TMC_BMA2">
       <node ref="C_tmc_4" pin="1"/>
       <node ref="U_TRINAMIC1" pin="37"/>
+      <node ref="R_tmc_7" pin="2"/>
       <node ref="D_tmc_2" pin="1"/>
     </net>
-    <net code="108" name="Net-(Q3-Pad4)">
+    <net code="110" name="TMC_BMA1">
+      <node ref="R_tmc_4" pin="2"/>
+      <node ref="D_tmc_1" pin="1"/>
+      <node ref="C_tmc_5" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="40"/>
+    </net>
+    <net code="111" name="TMC_CA2">
+      <node ref="U_TRINAMIC1" pin="35"/>
+      <node ref="C_tmc_4" pin="2"/>
+    </net>
+    <net code="112" name="Stepper_Loop_A_1">
+      <node ref="Q2" pin="3"/>
+      <node ref="Q3" pin="5"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="C_TMC_26" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R_tmc_4" pin="1"/>
+    </net>
+    <net code="113" name="TMC_SRAL">
+      <node ref="R_tmc_6" pin="1"/>
+      <node ref="U_TRINAMIC1" pin="7"/>
+      <node ref="C_tmc_6" pin="2"/>
+    </net>
+    <net code="114" name="Net-(Q3-Pad4)">
       <node ref="R_tmc_3" pin="1"/>
       <node ref="Q3" pin="4"/>
     </net>
-    <net code="109" name="Net-(Q7-Pad4)">
-      <node ref="Q7" pin="4"/>
-      <node ref="R_tmc_19" pin="2"/>
-    </net>
-    <net code="110" name="Net-(C_tmc_7-Pad1)">
-      <node ref="Q4" pin="2"/>
-      <node ref="R_tmc_5" pin="2"/>
-      <node ref="C_tmc_7" pin="1"/>
-      <node ref="R_tmc_8" pin="1"/>
-      <node ref="Q3" pin="3"/>
-      <node ref="Q4" pin="3"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="Q4" pin="1"/>
-      <node ref="Q3" pin="1"/>
-    </net>
-    <net code="111" name="TMC_BMA1">
-      <node ref="U_TRINAMIC1" pin="40"/>
-      <node ref="C_tmc_5" pin="1"/>
-      <node ref="D_tmc_1" pin="1"/>
-      <node ref="R_tmc_4" pin="2"/>
-    </net>
-    <net code="112" name="TMC_SRAH">
-      <node ref="C_tmc_6" pin="1"/>
-      <node ref="U_TRINAMIC1" pin="8"/>
-      <node ref="R_tmc_5" pin="1"/>
-    </net>
-    <net code="113" name="Net-(Q1-Pad4)">
-      <node ref="Q1" pin="4"/>
-      <node ref="R_tmc_10" pin="2"/>
-    </net>
-    <net code="114" name="Net-(Q2-Pad4)">
-      <node ref="Q2" pin="4"/>
+    <net code="115" name="Net-(Q2-Pad4)">
       <node ref="R_tmc_2" pin="1"/>
-    </net>
-    <net code="115" name="TMC_CA2">
-      <node ref="C_tmc_4" pin="2"/>
-      <node ref="U_TRINAMIC1" pin="35"/>
+      <node ref="Q2" pin="4"/>
     </net>
     <net code="116" name="TMC_HA1">
-      <node ref="R_tmc_2" pin="2"/>
       <node ref="U_TRINAMIC1" pin="41"/>
+      <node ref="R_tmc_2" pin="2"/>
     </net>
   </nets>
 </export>

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/caitlin/dev/auto_pen/hardware/electronics/main_board/main_board_cheaper.sch)
-    (date "Fri 02 Apr 2021 12:55:09 AM PDT")
+    (date "Fri 02 Apr 2021 04:36:55 PM PDT")
     (tool "Eeschema 5.1.9")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -206,6 +206,7 @@
         (field (name Description) "IC MTR DRVR BIPOLAR 8-60V 48TQFP")
         (field (name Digi-Key_PN) 1460-1249-ND)
         (field (name Family) "PMIC - Motor Drivers, Controllers")
+        (field (name JLCPCB) C516354)
         (field (name MPN) TMC5160-TA)
         (field (name Manufacturer) "Trinamic Motion Control GmbH")
         (field (name Status) Active))
@@ -918,10 +919,10 @@
       (tstamp 642D2A0E))
     (comp (ref J1)
       (value RJ45)
-      (footprint main_board:2158771)
+      (footprint main_board:5555166-1)
       (datasheet ~)
       (fields
-        (field (name JLCPCB) C305919))
+        (field (name JLCPCB) C305991))
       (libsource (lib Connector) (part RJ45) (description "RJ connector, 8P8C (8 positions 8 connected)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6067B9F4))

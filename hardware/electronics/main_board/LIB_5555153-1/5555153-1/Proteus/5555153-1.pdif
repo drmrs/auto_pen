@@ -1,0 +1,185 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "5555153-1"
+   (description "ModJack,RightAngle,8Position,Cat3 TE Connectivity Cat3 RJ45 Connector Socket, Right Angle, Through Hole")
+   (family "CON")
+   (package "55551531")
+   (attribute "Datasheet Link" "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5555153&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=5555153-1")
+   (attribute "Geometry.Height" "12mm")
+   (attribute "Manufacturer_Name" "TE Connectivity")
+   (attribute "Manufacturer_Part_Number" "5555153-1")
+   (attribute "Mouser Part Number" "571-5555153-1")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/5555153-1?qs=BcfjnG7NVaXMLRW9dVaLuA%3D%3D")
+   (attribute "Arrow Part Number" "5555153-1")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/5555153-1/te-connectivity")
+   (gate
+    (symbol "5555153-1")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "8" 8 PS)
+    (pin "9" 9 PS)
+    (pin "10" 10 PS)
+   )
+  )
+  (symbol "5555153-1"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -500) (pt 200 -500) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "55551531"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -8.13 9.335)
+      (pt 8.13 9.335)
+      (pt 8.13 -9.335)
+      (pt -8.13 -9.335)
+      (pt -8.13 9.335))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -10.113 10.335)
+      (pt 10.113 10.335)
+      (pt 10.113 -10.335)
+      (pt -10.113 -10.335)
+      (pt -10.113 10.335))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -8.13 -1.715)
+      (pt -8.13 9.335)
+      (pt 8.13 9.335)
+      (pt 8.13 -1.715))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -8.13 -6.795)
+      (pt -8.13 -9.335)
+      (pt 8.13 -9.335)
+      (pt 8.13 -6.795))))
+   (leg 1 (pt 4.445 7.685) (padstack 0))
+   (leg 2 (pt 3.175 5.145) (padstack 0))
+   (leg 3 (pt 1.905 7.685) (padstack 0))
+   (leg 4 (pt 0.635 5.145) (padstack 0))
+   (leg 5 (pt -0.635 7.685) (padstack 0))
+   (leg 6 (pt -1.905 5.145) (padstack 0))
+   (leg 7 (pt -3.175 7.685) (padstack 0))
+   (leg 8 (pt -4.445 5.145) (padstack 0))
+   (leg 9 (pt -7.875 -4.255) (padstack 9))
+   (leg 10 (pt 7.875 -4.255) (padstack 10))
+   (leg 11 (pt -5.715 -1.205) (padstack 11))
+   (leg 12 (pt 5.715 -1.205) (padstack 12))
+   (padstack 0
+    (hole 0.97)
+    (plated true)
+    (pad (layer TCOP) (round 1.508888888888889))
+    (pad (layer INNER) (round 1.508888888888889))
+    (pad (layer BCOP) (round 1.508888888888889))
+   )
+   (padstack 9
+    (hole 1.65)
+    (plated true)
+    (pad (layer TCOP) (round 2.4749999999999996))
+    (pad (layer INNER) (round 2.4749999999999996))
+    (pad (layer BCOP) (round 2.4749999999999996))
+   )
+   (padstack 10
+    (hole 1.65)
+    (plated true)
+    (pad (layer TCOP) (round 2.4749999999999996))
+    (pad (layer INNER) (round 2.4749999999999996))
+    (pad (layer BCOP) (round 2.4749999999999996))
+   )
+   (padstack 11
+    (hole 3.33)
+    (plated false)
+    (pad (layer TCOP) (round 1.665))
+    (pad (layer INNER) (round 1.665))
+    (pad (layer BCOP) (round 1.665))
+   )
+   (padstack 12
+    (hole 3.33)
+    (plated false)
+    (pad (layer TCOP) (round 1.665))
+    (pad (layer INNER) (round 1.665))
+    (pad (layer BCOP) (round 1.665))
+   )
+   (model "5555153-1.stp"
+    (euler 90 0 0)
+    (offset 0 -9.329999923706055 5.949999809265137)
+   )
+  )
+ )
+)

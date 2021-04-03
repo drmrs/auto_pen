@@ -1,0 +1,148 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "5555166-1"
+   (description "Mod Jack RJ45 Cat 3 PCB Mount TE Connectivity Female Cat3 RJ45 Modular Jack, Unshielded, Right Angle, PCB Mount Mount, 5555166")
+   (family "CON")
+   (package "5555166-1")
+   (attribute "Datasheet Link" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773464-9_MODULAR_JACKS&DocType=Data+Sheet&DocLang=English&PartCntxt=5555166-1&DocFormat=pdf")
+   (attribute "Manufacturer_Name" "TE Connectivity")
+   (attribute "Manufacturer_Part_Number" "5555166-1")
+   (attribute "Mouser Part Number" "571-5555166-1")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/5555166-1/?qs=BcfjnG7NVaVe9aSiIqXqzg%3D%3D")
+   (attribute "Arrow Part Number" "5555166-1")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/5555166-1/te-connectivity")
+   (gate
+    (symbol "5555166-1")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "8" 8 PS)
+   )
+  )
+  (symbol "5555166-1"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "5555166-1"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed true)
+      (pt -17.91 18.42)
+      (pt 0 18.42)
+      (pt 0 0)
+      (pt -17.91 0)
+      (pt -17.91 18.42))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (path
+      (closed false)
+      (pt -17.91 0)
+      (pt 0 0)
+      (pt 0 18.42)
+      (pt -17.91 18.42)
+      (pt -17.91 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.254)
+     (circle
+      (pt -19.76133 14.425) (pt -19.42 14.425)
+     )
+    )
+   )
+   (leg 1 (pt -12.13 16.76) (padstack 0))
+   (leg 2 (pt -9.59 16.76) (padstack 0))
+   (leg 3 (pt -7.05 16.76) (padstack 0))
+   (leg 4 (pt -4.51 16.76) (padstack 0))
+   (leg 5 (pt -13.4 14.22) (padstack 0))
+   (leg 6 (pt -10.86 14.22) (padstack 0))
+   (leg 7 (pt -8.32 14.22) (padstack 0))
+   (leg 8 (pt -5.78 14.22) (padstack 0))
+   (leg 9 (pt -14.67 7.87) (padstack 9))
+   (leg 10 (pt -3.24 7.87) (padstack 10))
+   (padstack 0
+    (hole 0.96)
+    (plated true)
+    (pad (layer TCOP) (round 1.46))
+    (pad (layer INNER) (round 1.46))
+    (pad (layer BCOP) (round 1.46))
+   )
+   (padstack 9
+    (hole 3.32)
+    (plated false)
+    (pad (layer TCOP) (round 3.32))
+    (pad (layer INNER) (round 3.32))
+    (pad (layer BCOP) (round 3.32))
+   )
+   (padstack 10
+    (hole 3.32)
+    (plated false)
+    (pad (layer TCOP) (round 3.32))
+    (pad (layer INNER) (round 3.32))
+    (pad (layer BCOP) (round 3.32))
+   )
+   (model "5555166-1.stp"
+    (euler 90 0 0)
+    (offset -8.989999771118164 -0.12999999523162842 6.230000019073486)
+   )
+  )
+ )
+)

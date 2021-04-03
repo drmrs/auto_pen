@@ -1,0 +1,9 @@
+Manufacturer=TE Connectivity
+PartNumber=5555153-1
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=1.2
+Released=2018-01-26 10:07:37
+Downloaded=2021-04-03 00:20:38
+3D=Y

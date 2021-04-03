@@ -1,4 +1,4 @@
-19142914590905042
+19146149429494042
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83033,6 +83033,20 @@ Connector
 0
 8
 8
+main_board
+5555166-1
+5555166-1
+Connector
+0
+10
+8
+main_board
+55551531
+5555153-1
+Connector
+0
+10
+10
 main_board
 DS1128S80BP
 DS1128-S80BP-1
