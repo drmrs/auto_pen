@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM5005MHX_NOPB
+D 7-75V Wide Vin, 2.5A Current Mode Non-Synchronous Buck Regulator
+K
+F http://www.ti.com/lit/gpn/LM5005
+$ENDCMP
+#
+#End Doc Library

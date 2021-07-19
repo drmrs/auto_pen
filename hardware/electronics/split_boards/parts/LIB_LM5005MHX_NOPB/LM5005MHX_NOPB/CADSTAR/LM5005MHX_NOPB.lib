@@ -1,0 +1,18 @@
+.LM5005MHX_NOPB :1 ;7-75V Wide Vin, 2.5A Current Mode Non-Synchronous Buck Regulator
+SOP65P640X110-21N
+*STM IC
+*NGS
+*PLB 1="VCC" 2="SD" 3="VIN_1" 4="VIN_2" 5="SYNC" 6="COMP" 7="FB" 8="RT" 9="RAMP" 10="AGND" 11="SS" 12="OUT" 13="PGND_1" 14="PGND_2" 15="IS_1" 16="IS_2" 17="SW_1" 18="SW_2" 19="PRE" 20="BST" 21="EP"
+*MXP 21
+*DFN LM5005MHX_NOPB
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (LM5005MHX/NOPB)
+~!Mouser Part Number (926-LM5005MHX/NOPB)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM5005MHX-NOPB/?qs=QbsRYf82W3Hdo32mIlauHA%3D%3D)
+~!Arrow Part Number (LM5005MHX/NOPB)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/lm5005mhxnopb/texas-instruments)
+~!Link Datasheet (http://www.ti.com/lit/gpn/LM5005)
+~!Height (1.1mm)
+~!3D_Model (LM5005MHX_NOPB)
+LM5005MHX_NOPB
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 21.1!U 20.1!U 19.1!U 18.1!U 17.1!U 16.1!U 15.1!U 14.1!U 13.1!U 12.1!U 11.1!U 

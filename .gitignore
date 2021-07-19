@@ -1,5 +1,8 @@
 hardware/electronics/main_board/g.zip
 hardware/electronics/main_board/g/*
+hardware/electronics/split_boards/split/g.zip
+hardware/electronics/split_boards/split/g/*
+
 __pycache__
 .DS_Store
 .idea/

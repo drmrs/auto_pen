@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name split)(type KiCad)(uri ${KIPRJMOD}/split.pretty)(options "")(descr ""))
+)

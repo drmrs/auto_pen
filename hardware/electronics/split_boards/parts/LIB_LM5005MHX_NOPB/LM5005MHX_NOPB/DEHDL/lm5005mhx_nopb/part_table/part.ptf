@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LM5005MHX_NOPB'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "LM5005MHX/NOPB" (!) = "", "SOP65P640X110-21N", "Small Outline Packages", "926-LM5005MHX/NOPB", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM5005MHX-NOPB/?qs=QbsRYf82W3Hdo32mIlauHA%3D%3D", "LM5005MHX/NOPB", "https://www.arrow.com/en/products/lm5005mhxnopb/texas-instruments", "7-75V Wide Vin, 2.5A Current Mode Non-Synchronous Buck Regulator", "http://www.ti.com/lit/gpn/LM5005", "1.1 mm"
+END_PART
+
+END.
